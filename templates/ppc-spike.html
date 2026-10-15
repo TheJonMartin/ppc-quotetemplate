@@ -1,0 +1,34 @@
+<!--
+  templateType: quote
+  isAvailableForNewContent: true
+  label: PPC Spike (throwaway)
+-->
+{# Throwaway template for Phase 0 spike. Upload as "PPC Spike", attach to a test quote, and screenshot each block. #}
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>PPC Spike</title></head>
+<body style="font-family: monospace; padding: 16px;">
+<h2>V1/V2: line item custom props</h2>
+<pre>{% for li in template_data.quote.associated_objects.line_items %}{{ li.name }} | ws={{ li.ppc_workstream }} | form={{ li.ppc_form_target }} | amount={{ li.amount }} | freq={{ li.recurringbillingfrequency }}
+{% endfor %}</pre>
+
+<h2>V3: deal props</h2>
+<pre>{{ template_data.quote.associated_objects.deal.ppc_exec_situation }}
+{{ template_data.quote.associated_objects.deal.ppc_form_journey }}</pre>
+
+<h2>V4: HubDB</h2>
+<pre>{% set rows = hubdb_table_rows('ppc_quote_workstreams') %}rows found: {{ rows|length }}</pre>
+
+<h2>fromjson</h2>
+<pre>{% set j = '[{"a":1}]'|fromjson %}{{ j|pprint }}</pre>
+
+<h2>V5: print/JS</h2>
+<p id="js-test">JS did NOT run</p>
+<script>document.getElementById('js-test').textContent = 'JS ran';</script>
+<style>.print-only{display:none}@media print{.print-only{display:block;color:red}}</style>
+<p class="print-only">@media print honoured</p>
+
+<h2>Full template_data</h2>
+<pre>{{ template_data|pprint }}</pre>
+</body>
+</html>
