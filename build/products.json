@@ -686,20 +686,6 @@
     }
   },
   {
-    "sku": "PPC-managed-marketing-operations",
-    "name": "Managed Marketing Operations",
-    "price": 225,
-    "recurringbillingfrequency": null,
-    "properties": {
-      "ppc_module_id": "managed-marketing-operations",
-      "ppc_module_family": "Support & enablement",
-      "ppc_5c_stage": "Capture",
-      "ppc_process_area": "Demand Capture",
-      "ppc_competency": "Marketing campaign management",
-      "ppc_form_stages": "O"
-    }
-  },
-  {
     "sku": "PPC-ongoing-support-fractional-revops",
     "name": "Ongoing RevOps Support",
     "price": 225,

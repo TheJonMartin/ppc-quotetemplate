@@ -3,50 +3,111 @@
     "no competency (excluded from FORM journey): platform-cutover-and-decommission",
     "no tiers (cannot be priced): portal-customization",
     "no competency (excluded from FORM journey): portal-customization",
-    "not in any workstream: managed-marketing-operations",
     "no competency (excluded from FORM journey): ongoing-support-fractional-revops"
   ],
   "sample": {
-    "lines": {
-      "client-onboarding": {
-        "moduleHours": 15,
-        "pmHours": 0,
-        "hours": 15,
-        "amount": 3375
+    "basis": "midpoint (current default)",
+    "midpoint": {
+      "lines": {
+        "client-onboarding": {
+          "moduleHours": 13,
+          "pmHours": 0,
+          "hours": 13,
+          "amount": 2925,
+          "modules": [
+            "onboarding-and-project-kickoff:standard=13"
+          ]
+        },
+        "sales-hub-launch": {
+          "moduleHours": 149,
+          "pmHours": 22,
+          "hours": 171,
+          "amount": 38475,
+          "modules": [
+            "system-design-and-data-model:standard=16",
+            "core-crm-configuration:standard=14",
+            "sales-hub-setup-pipeline-and-activity:standard=13",
+            "lifecycle-configuration:essential=10",
+            "lead-and-lifecycle-management:standard=38",
+            "sales-pipeline-design-and-build:standard=19",
+            "sequences-templates-and-playbooks:essential=8",
+            "sales-pipeline-reporting-and-dashboards:standard=15",
+            "data-migration:standard=16"
+          ]
+        },
+        "quoting-cpq": {
+          "moduleHours": 47,
+          "pmHours": 7,
+          "hours": 54,
+          "amount": 12150,
+          "modules": [
+            "cpq-quote-implementation:standard=30",
+            "product-library-design:standard=17"
+          ]
+        }
       },
-      "sales-hub-launch": {
-        "moduleHours": 195,
-        "pmHours": 29,
-        "hours": 224,
-        "amount": 50400
+      "oneTimeHours": 238,
+      "oneTimeAmount": 53550,
+      "supportHoursPerMonth": 25,
+      "supportPerMonth": 5625,
+      "supportThreeMonths": 16875,
+      "totalInitialCommitment": 70425
+    },
+    "hours_high_for_comparison": {
+      "lines": {
+        "client-onboarding": {
+          "moduleHours": 15,
+          "pmHours": 0,
+          "hours": 15,
+          "amount": 3375,
+          "modules": [
+            "onboarding-and-project-kickoff:standard=15"
+          ]
+        },
+        "sales-hub-launch": {
+          "moduleHours": 195,
+          "pmHours": 29,
+          "hours": 224,
+          "amount": 50400,
+          "modules": [
+            "system-design-and-data-model:standard=24",
+            "core-crm-configuration:standard=18",
+            "sales-hub-setup-pipeline-and-activity:standard=18",
+            "lifecycle-configuration:essential=12",
+            "lead-and-lifecycle-management:standard=45",
+            "sales-pipeline-design-and-build:standard=26",
+            "sequences-templates-and-playbooks:essential=10",
+            "sales-pipeline-reporting-and-dashboards:standard=20",
+            "data-migration:standard=22"
+          ]
+        },
+        "quoting-cpq": {
+          "moduleHours": 62,
+          "pmHours": 9,
+          "hours": 71,
+          "amount": 15975,
+          "modules": [
+            "cpq-quote-implementation:standard=40",
+            "product-library-design:standard=22"
+          ]
+        }
       },
-      "quoting-cpq": {
-        "moduleHours": 62,
-        "pmHours": 9,
-        "hours": 71,
-        "amount": 15975
-      }
+      "oneTimeHours": 310,
+      "oneTimeAmount": 69750,
+      "matchesV2": true
     },
-    "oneTimeHours": 310,
-    "oneTimeAmount": 69750,
-    "expected": {
-      "hours": 310,
-      "amount": 69750
-    },
-    "matchesV2": true,
-    "supportEssentialTier": {
-      "hours_low": 20,
-      "hours_high": 30,
-      "includes": [
-        "20, or 30 hours a month"
-      ]
-    },
-    "supportNote": "Essential tier is 20-30 hrs/mo. v2's $4,500/mo needs the rep to set 20 hrs; the hours_high default would give 6750/mo."
+    "removeLeadManagementMidpoint": {
+      "moduleHours": 111,
+      "pmHours": 17
+    }
   },
   "counts": {
     "workstreams": 12,
-    "modules": 51,
-    "productsToCreate": 51,
+    "modulesInSnapshot": 51,
+    "productsToCreate": 50,
+    "excluded": [
+      "managed-marketing-operations"
+    ],
     "workstreamModuleRows": 185
   }
 }

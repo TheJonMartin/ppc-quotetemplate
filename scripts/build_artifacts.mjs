@@ -22,11 +22,17 @@ const PALETTE = [
 ];
 const MONTHLY = new Set(['ongoing-support-fractional-revops']);
 const TIERS = ['essential', 'standard', 'advanced'];
+// Decisions (Jon, 2026-10-15): default hours = tier midpoint; Managed Marketing Operations stays off quotes;
+// PM rounds to the nearest hour, halves up; Draft workstreams are quotable; all quotes are test quotes for now.
+const EXCLUDE = new Set(['managed-marketing-operations']);
+const roundHalfUp = (n) => Math.floor(n + 0.5);
+const midpoint = (t) => roundHalfUp((t.hours_low + t.hours_high) / 2);
 
 const snap = JSON.parse(fs.readFileSync(SNAP, 'utf8'));
 const W = [...snap.workstreams].sort((a, b) => a.order - b.order);
-const M = snap.modules;
-const mod = Object.fromEntries(M.map((m) => [m.module_id, m]));
+const MALL = snap.modules;
+const M = MALL.filter((m) => !EXCLUDE.has(m.module_id));
+const mod = Object.fromEntries(MALL.map((m) => [m.module_id, m]));
 const report = { findings: [], sample: {} };
 const warn = (msg) => report.findings.push(msg);
 
@@ -68,18 +74,18 @@ write('hubdb/ppc_workstream_modules.json', {
 
 write('hubdb/ppc_module_tiers.json', {
   name: 'ppc_module_tiers', label: 'PPC Module Tiers',
-  columns: [['module_id', 'TEXT'], ['module_name', 'TEXT'], ['tier', 'TEXT'], ['hours_low', 'NUMBER'], ['hours_high', 'NUMBER'], ['includes', 'TEXT']]
+  columns: [['module_id', 'TEXT'], ['module_name', 'TEXT'], ['tier', 'TEXT'], ['hours_low', 'NUMBER'], ['hours_high', 'NUMBER'], ['hours_default', 'NUMBER'], ['includes', 'TEXT']]
     .map(([name, type]) => ({ name, label: name, type })),
   rows: M.flatMap((m) => TIERS.filter((t) => m.tiers && m.tiers[t]).map((t) => ({
-    module_id: m.module_id, module_name: m.name, tier: t, hours_low: m.tiers[t].hours_low, hours_high: m.tiers[t].hours_high,
+    module_id: m.module_id, module_name: m.name, tier: t, hours_low: m.tiers[t].hours_low, hours_high: m.tiers[t].hours_high, hours_default: midpoint(m.tiers[t]),
     includes: (m.tiers[t].includes || []).join(' · '),
   }))),
 });
 
 write('hubdb/ppc_quote_settings.json', {
   name: 'ppc_quote_settings', label: 'PPC Quote Settings',
-  columns: [['hourly_rate', 'NUMBER'], ['currency', 'TEXT'], ['pm_rounding', 'TEXT']].map(([name, type]) => ({ name, label: name, type })),
-  rows: [{ hourly_rate: RATE, currency: 'USD', pm_rounding: 'nearest hour, halves up' }],
+  columns: [['hourly_rate', 'NUMBER'], ['currency', 'TEXT'], ['pm_rounding', 'TEXT'], ['default_hours_basis', 'TEXT']].map(([name, type]) => ({ name, label: name, type })),
+  rows: [{ hourly_rate: RATE, currency: 'USD', pm_rounding: 'nearest hour, halves up', default_hours_basis: 'midpoint' }],
 });
 
 write('hubdb/ppc_quote_outcomes.json', {
@@ -117,8 +123,10 @@ write('properties.json', {
 });
 
 // ---------- section 6 sample simulation ----------
-const roundHalfUp = (n) => Math.floor(n + 0.5);
-const hours = (id, tier, override) => override ?? mod[id].tiers[tier].hours_high;
+const hoursFor = (id, tier, basis) => {
+  const t = mod[id].tiers[tier];
+  return basis === 'high' ? t.hours_high : midpoint(t);
+};
 const sample = [
   ['client-onboarding', 'onboarding-and-project-kickoff', 'standard'],
   ['sales-hub-launch', 'system-design-and-data-model', 'standard'],
@@ -133,26 +141,37 @@ const sample = [
   ['quoting-cpq', 'cpq-quote-implementation', 'standard'],
   ['quoting-cpq', 'product-library-design', 'standard'],
 ];
-const byWs = {};
-for (const [ws, id, tier] of sample) (byWs[ws] ||= []).push({ id, tier, hrs: hours(id, tier) });
-let totalHrs = 0;
-const lines = {};
-for (const [ws, items] of Object.entries(byWs)) {
-  const sub = items.reduce((s, x) => s + x.hrs, 0);
-  const incPm = W.find((w) => w.workstream_id === ws).include_pm;
-  const pm = incPm ? roundHalfUp(sub * 0.15) : 0;
-  lines[ws] = { moduleHours: sub, pmHours: pm, hours: sub + pm, amount: (sub + pm) * RATE };
-  totalHrs += sub + pm;
-}
-const ongoing = mod['ongoing-support-fractional-revops'].tiers.essential;
-report.sample = {
-  lines, oneTimeHours: totalHrs, oneTimeAmount: totalHrs * RATE,
-  expected: { hours: 310, amount: 69750 },
-  matchesV2: totalHrs === 310 && totalHrs * RATE === 69750,
-  supportEssentialTier: ongoing,
-  supportNote: `Essential tier is ${ongoing.hours_low}-${ongoing.hours_high} hrs/mo. v2's $4,500/mo needs the rep to set 20 hrs; the hours_high default would give ${ongoing.hours_high * RATE}/mo.`,
+const simulate = (basis) => {
+  const byWs = {};
+  for (const [ws, id, tier] of sample) (byWs[ws] ||= []).push({ id, tier, hrs: hoursFor(id, tier, basis) });
+  let total = 0;
+  const lines = {};
+  for (const [ws, items] of Object.entries(byWs)) {
+    const sub = items.reduce((s, x) => s + x.hrs, 0);
+    const incPm = W.find((w) => w.workstream_id === ws).include_pm;
+    const pm = incPm ? roundHalfUp(sub * 0.15) : 0;
+    lines[ws] = { moduleHours: sub, pmHours: pm, hours: sub + pm, amount: (sub + pm) * RATE, modules: items.map((x) => `${x.id}:${x.tier}=${x.hrs}`) };
+    total += sub + pm;
+  }
+  return { lines, oneTimeHours: total, oneTimeAmount: total * RATE };
 };
-report.counts = { workstreams: W.length, modules: M.length, productsToCreate: M.length, workstreamModuleRows: W.reduce((n, w) => n + w.modules.length, 0) };
+const ongoing = mod['ongoing-support-fractional-revops'].tiers.essential;
+const sup = midpoint(ongoing);
+const midSim = simulate('midpoint');
+const highSim = simulate('high');
+report.sample = {
+  basis: 'midpoint (current default)',
+  midpoint: { ...midSim, supportHoursPerMonth: sup, supportPerMonth: sup * RATE, supportThreeMonths: sup * RATE * 3,
+    totalInitialCommitment: midSim.oneTimeAmount + sup * RATE * 3 },
+  hours_high_for_comparison: { ...highSim, matchesV2: highSim.oneTimeHours === 310 && highSim.oneTimeAmount === 69750 },
+  removeLeadManagementMidpoint: (() => {
+    const sh = midSim.lines['sales-hub-launch'];
+    const lm = hoursFor('lead-and-lifecycle-management', 'standard', 'midpoint');
+    const mh = sh.moduleHours - lm;
+    return { moduleHours: mh, pmHours: roundHalfUp(mh * 0.15) };
+  })(),
+};
+report.counts = { workstreams: W.length, modulesInSnapshot: MALL.length, productsToCreate: M.length, excluded: [...EXCLUDE], workstreamModuleRows: W.reduce((n, w) => n + w.modules.length, 0) };
 write('report.json', report);
 
-console.log(JSON.stringify({ counts: report.counts, sample: report.sample.matchesV2, findings: report.findings }, null, 2));
+console.log(JSON.stringify({ counts: report.counts, findings: report.findings }, null, 2));

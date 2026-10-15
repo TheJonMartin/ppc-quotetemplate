@@ -28,6 +28,11 @@
       "type": "NUMBER"
     },
     {
+      "name": "hours_default",
+      "label": "hours_default",
+      "type": "NUMBER"
+    },
+    {
       "name": "includes",
       "label": "includes",
       "type": "TEXT"
@@ -40,6 +45,7 @@
       "tier": "essential",
       "hours_low": 20,
       "hours_high": 30,
+      "hours_default": 25,
       "includes": "One CRM, standard objects"
     },
     {
@@ -48,6 +54,7 @@
       "tier": "standard",
       "hours_low": 30,
       "hours_high": 60,
+      "hours_default": 45,
       "includes": "Everything in Essential · Custom objects, automations, and reports to inventory"
     },
     {
@@ -56,6 +63,7 @@
       "tier": "advanced",
       "hours_low": 60,
       "hours_high": 100,
+      "hours_default": 80,
       "includes": "Everything in Standard · Several business units, many integrations"
     },
     {
@@ -64,6 +72,7 @@
       "tier": "essential",
       "hours_low": 5,
       "hours_high": 15,
+      "hours_default": 10,
       "includes": "Portal audit for one hub · Prioritized findings · Two 1-hour process walkthroughs"
     },
     {
@@ -72,6 +81,7 @@
       "tier": "standard",
       "hours_low": 15,
       "hours_high": 25,
+      "hours_default": 20,
       "includes": "Everything in Essential · Up to 2 process walkthroughs · Property fill-rate analysis · Sequenced roadmap"
     },
     {
@@ -80,6 +90,7 @@
       "tier": "advanced",
       "hours_low": 25,
       "hours_high": 40,
+      "hours_default": 33,
       "includes": "Everything in Standard · Several business units or portals · Integration and data flow audit"
     },
     {
@@ -88,6 +99,7 @@
       "tier": "essential",
       "hours_low": 10,
       "hours_high": 16,
+      "hours_default": 13,
       "includes": "Inventory of a small asset library"
     },
     {
@@ -96,6 +108,7 @@
       "tier": "standard",
       "hours_low": 16,
       "hours_high": 28,
+      "hours_default": 22,
       "includes": "Everything in Essential · Medium library with workflows"
     },
     {
@@ -104,6 +117,7 @@
       "tier": "advanced",
       "hours_low": 28,
       "hours_high": 45,
+      "hours_default": 37,
       "includes": "Everything in Standard · Large library or several business units"
     },
     {
@@ -112,6 +126,7 @@
       "tier": "essential",
       "hours_low": 12,
       "hours_high": 18,
+      "hours_default": 15,
       "includes": "1 persona, first touch through renewal or retention · Up to 3 workshops · Journey map and touchpoint inventory · HubSpot requirements list"
     },
     {
@@ -120,6 +135,7 @@
       "tier": "standard",
       "hours_low": 18,
       "hours_high": 28,
+      "hours_default": 23,
       "includes": "Everything in Essential · Up to 3 personas, for example buyer and member or end user · Gap analysis between teams · Prioritized roadmap mapped to modules"
     },
     {
@@ -128,6 +144,7 @@
       "tier": "advanced",
       "hours_low": 28,
       "hours_high": 40,
+      "hours_default": 34,
       "includes": "Everything in Standard · Several segments, product lines, or regions · Customer interviews or survey input"
     },
     {
@@ -136,6 +153,7 @@
       "tier": "essential",
       "hours_low": 12,
       "hours_high": 18,
+      "hours_default": 15,
       "includes": "Up to 3 working sessions · Lifecycle and lead status definitions · Single go-to-market motion"
     },
     {
@@ -144,6 +162,7 @@
       "tier": "standard",
       "hours_low": 18,
       "hours_high": 28,
+      "hours_default": 23,
       "includes": "Everything in Essential · ICP and segmentation model · Tech stack recommendation"
     },
     {
@@ -152,6 +171,7 @@
       "tier": "advanced",
       "hours_low": 28,
       "hours_high": 40,
+      "hours_default": 34,
       "includes": "Everything in Standard · Several motions (for example product-led and sales-led) · Several segments or regions"
     },
     {
@@ -160,6 +180,7 @@
       "tier": "essential",
       "hours_low": 4,
       "hours_high": 8,
+      "hours_default": 6,
       "includes": "Light design for a single team, folded into the build"
     },
     {
@@ -168,6 +189,7 @@
       "tier": "standard",
       "hours_low": 8,
       "hours_high": 24,
+      "hours_default": 16,
       "includes": "Everything in Essential · Full target data model · Field mapping from source systems · Up to 20 custom properties per object · Integration discovery: requirements workshops, system-of-record boundaries, sync direction, API and volume constraints, and a Phase 2 build plan"
     },
     {
@@ -176,6 +198,7 @@
       "tier": "advanced",
       "hours_low": 24,
       "hours_high": 50,
+      "hours_default": 37,
       "includes": "Everything in Standard · Several business units · Complex associations or account hierarchy · Partner dependencies"
     },
     {
@@ -184,6 +207,7 @@
       "tier": "essential",
       "hours_low": 5,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "Standard kickoff and onboarding portal · Up to 3 reverse-demo walkthroughs of current processes (run in Current-State Assessment instead when it is sold)"
     },
     {
@@ -192,6 +216,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 15,
+      "hours_default": 13,
       "includes": "Everything in Essential · Several stakeholder groups or locations · 2 simultaneous workstreams"
     },
     {
@@ -200,6 +225,7 @@
       "tier": "advanced",
       "hours_low": 15,
       "hours_high": 25,
+      "hours_default": 20,
       "includes": "3+ workstreams"
     },
     {
@@ -208,6 +234,7 @@
       "tier": "essential",
       "hours_low": 12,
       "hours_high": 20,
+      "hours_default": 16,
       "includes": "1 new business quote template · Standard approval · E-signature and contract terms · Up to 3 discovery sessions · Up to 2 training sessions · Up to 8 hours of post-go-live support"
     },
     {
@@ -216,6 +243,7 @@
       "tier": "standard",
       "hours_low": 20,
       "hours_high": 40,
+      "hours_default": 30,
       "includes": "Everything in Essential · Templates by segment · Discount approval workflow · Line item customizations (up to 5)"
     },
     {
@@ -224,6 +252,7 @@
       "tier": "advanced",
       "hours_low": 40,
       "hours_high": 100,
+      "hours_default": 70,
       "includes": "Everything in Standard · Long-form contract handling (attachments, PO and insurance tracking) · Third-party CPQ or complex product rules"
     },
     {
@@ -232,6 +261,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "Portal settings and standard objects · Properties for Contact and Company (up to 20 per object) · Portal-wide teams and permissions (up to 5 teams) · Email and calendar connected for all users · Up to 5 permission sets"
     },
     {
@@ -240,6 +270,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 18,
+      "hours_default": 14,
       "includes": "Everything in Essential · Required fields and validation rules · Record views by team · Required and validated fields (up to 10 across objects)"
     },
     {
@@ -248,6 +279,7 @@
       "tier": "advanced",
       "hours_low": 18,
       "hours_high": 32,
+      "hours_default": 25,
       "includes": "Everything in Standard · Multiple business units or brands in one portal · More than 20 properties per object or custom objects"
     },
     {
@@ -256,6 +288,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 14,
+      "hours_default": 11,
       "includes": "Campaign structure and naming convention · UTM standard · Up to 5 conversion events and 10 core segments · 1 standard campaign hierarchy"
     },
     {
@@ -264,6 +297,7 @@
       "tier": "standard",
       "hours_low": 14,
       "hours_high": 28,
+      "hours_default": 21,
       "includes": "Everything in Essential · Up to 2 nurture workflows · Campaign templates and Marketing Events · Engagement and intent alerts to BDRs (up to 5 workflows) · A re-engagement or recycle nurture · Social account publishing setup"
     },
     {
@@ -272,6 +306,7 @@
       "tier": "advanced",
       "hours_low": 28,
       "hours_high": 55,
+      "hours_default": 42,
       "includes": "Everything in Standard · Multi-touch nurture programs · Campaign hierarchy across products or regions"
     },
     {
@@ -280,6 +315,7 @@
       "tier": "essential",
       "hours_low": 4,
       "hours_high": 8,
+      "hours_default": 6,
       "includes": "No-code card showing HubSpot data"
     },
     {
@@ -288,6 +324,7 @@
       "tier": "standard",
       "hours_low": 8,
       "hours_high": 16,
+      "hours_default": 12,
       "includes": "Everything in Essential · Several cards across teams"
     },
     {
@@ -296,6 +333,7 @@
       "tier": "advanced",
       "hours_low": 16,
       "hours_high": 40,
+      "hours_default": 28,
       "includes": "Everything in Standard · UI extension cards with external data or actions (developer estimate)"
     },
     {
@@ -304,6 +342,7 @@
       "tier": "essential",
       "hours_low": 15,
       "hours_high": 25,
+      "hours_default": 20,
       "includes": "Health score model with a few inputs · Monthly scoring process"
     },
     {
@@ -312,6 +351,7 @@
       "tier": "standard",
       "hours_low": 25,
       "hours_high": 35,
+      "hours_default": 30,
       "includes": "Everything in Essential · Health score dashboards (up to 10 reports and 3 views) · Sub-scores and owner commentary"
     },
     {
@@ -320,6 +360,7 @@
       "tier": "advanced",
       "hours_low": 35,
       "hours_high": 55,
+      "hours_default": 45,
       "includes": "Everything in Standard · Automated inputs from product usage or other systems"
     },
     {
@@ -328,6 +369,7 @@
       "tier": "essential",
       "hours_low": 12,
       "hours_high": 22,
+      "hours_default": 17,
       "includes": "Onboarding pipeline with stages and required fields · Handoff from closed-won into onboarding · 1 onboarding dashboard"
     },
     {
@@ -336,6 +378,7 @@
       "tier": "standard",
       "hours_low": 22,
       "hours_high": 35,
+      "hours_default": 29,
       "includes": "Everything in Essential · Onboarding tasks and templates by stage · Automated handoff and customer success owner assignment · Time-in-stage and stalled-onboarding alerts"
     },
     {
@@ -344,6 +387,7 @@
       "tier": "advanced",
       "hours_low": 35,
       "hours_high": 55,
+      "hours_default": 45,
       "includes": "Everything in Standard · Several onboarding processes by product or segment · Custom onboarding object · Onboarding data synced from another tool, such as a support platform"
     },
     {
@@ -352,6 +396,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "Ticket visibility for customers"
     },
     {
@@ -360,6 +405,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 20,
+      "hours_default": 15,
       "includes": "Everything in Essential · Additional records and properties visible to customers"
     },
     {
@@ -368,6 +414,7 @@
       "tier": "advanced",
       "hours_low": 20,
       "hours_high": 40,
+      "hours_default": 30,
       "includes": "Everything in Standard · Self-service actions such as renewal requests"
     },
     {
@@ -376,6 +423,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "Process Pro provides import templates; the client fills them · Standard objects only · Lists-only exit from another marketing platform: lists plus opt-in and opt-out statuses · 1 supported import per object · Validation summary"
     },
     {
@@ -384,6 +432,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 22,
+      "hours_default": 16,
       "includes": "Everything in Essential · Process Pro prepares import files · 3 or more objects with associations"
     },
     {
@@ -392,6 +441,7 @@
       "tier": "advanced",
       "hours_low": 22,
       "hours_high": 60,
+      "hours_default": 41,
       "includes": "Everything in Standard · Custom objects · Historical activity · Messy source system or staged cutover"
     },
     {
@@ -400,6 +450,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "Forecast categories and submission rules · Goals and quotas for one team"
     },
     {
@@ -408,6 +459,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 20,
+      "hours_default": 15,
       "includes": "Everything in Essential · Goals and quotas for several teams · Forecast fields and deal data setup"
     },
     {
@@ -416,6 +468,7 @@
       "tier": "advanced",
       "hours_low": 20,
       "hours_high": 45,
+      "hours_default": 33,
       "includes": "Everything in Standard · Custom revenue forecasting model (for example a monthly metrics custom object)"
     },
     {
@@ -424,6 +477,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Knowledge base setup and categories · Initial articles for top questions"
     },
     {
@@ -432,6 +486,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 22,
+      "hours_default": 17,
       "includes": "Everything in Essential · Migration of existing articles · Article review process"
     },
     {
@@ -440,6 +495,7 @@
       "tier": "advanced",
       "hours_low": 22,
       "hours_high": 40,
+      "hours_default": 31,
       "includes": "Everything in Standard · Multiple knowledge bases or languages"
     },
     {
@@ -448,6 +504,7 @@
       "tier": "essential",
       "hours_low": 15,
       "hours_high": 30,
+      "hours_default": 23,
       "includes": "Lead statuses and dispositions · Company, contact, and lead ownership rules · Ownership cleanup, including records owned by deactivated users · Lead status and disposition reporting · Process Pro Lead Management Process Map · Owner-entered or form-based intake, no scoring or recycling"
     },
     {
@@ -456,6 +513,7 @@
       "tier": "standard",
       "hours_low": 30,
       "hours_high": 45,
+      "hours_default": 38,
       "includes": "Everything in Essential · Lead scoring (1 model, up to 30 criteria) · Routing rules and up to 2 handoff workflows · Lead recycling (1 workflow) · Lead source and attribution model (single or multi-touch source, populated across contacts, companies, and deals) · For sales-led or outbound teams: BDR dispositions and timed re-engagement (for example 3, 6, and 9 months)"
     },
     {
@@ -464,6 +522,7 @@
       "tier": "advanced",
       "hours_low": 45,
       "hours_high": 70,
+      "hours_default": 58,
       "includes": "Everything in Standard · HubSpot Lead object with lead pipeline stages · Multiple scoring models or routing across business units or regions · SLA and speed-to-lead tracking: time to first touch, aging alerts on unworked leads, and SLA reporting · BDR and AE dual ownership, and ownership by named-account tier · A non-fit account list kept out of all automation"
     },
     {
@@ -472,6 +531,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Confirm or adjust the standard lifecycle stages · Deal-driven stage progression · MQL criteria and MQL automation · Light lifecycle reporting · Lifecycle stages on 1 property"
     },
     {
@@ -480,6 +540,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 26,
+      "hours_default": 19,
       "includes": "Everything in Essential · Migrating or updating existing records to the new or adjusted stages · Conversion reporting, including MQL to Opportunity"
     },
     {
@@ -488,6 +549,7 @@
       "tier": "advanced",
       "hours_low": 26,
       "hours_high": 50,
+      "hours_default": 38,
       "includes": "Everything in Standard · Custom lifecycle stages: fully custom lifecycle properties (for example by product line or business unit) · Mapping the custom properties back to the standard Lifecycle Stage property so native reporting and automation keep working · Evaluating a custom lifecycle property against the native one, and deciding whether to migrate · Guardrails where external systems (for example product data or reverse ETL) write lifecycle inputs"
     },
     {
@@ -496,6 +558,7 @@
       "tier": "essential",
       "hours_low": 30,
       "hours_high": 50,
+      "hours_default": 40,
       "includes": "Rebuild a small asset set (set in discovery) · 2 training sessions"
     },
     {
@@ -504,6 +567,7 @@
       "tier": "standard",
       "hours_low": 50,
       "hours_high": 110,
+      "hours_default": 80,
       "includes": "Everything in Essential · Medium asset set including workflows"
     },
     {
@@ -512,6 +576,7 @@
       "tier": "advanced",
       "hours_low": 110,
       "hours_high": 200,
+      "hours_default": 155,
       "includes": "Everything in Standard · Large asset set or complex automation"
     },
     {
@@ -520,6 +585,7 @@
       "tier": "essential",
       "hours_low": 24,
       "hours_high": 36,
+      "hours_default": 30,
       "includes": "Sending domain and tracking code (1 domain) · Email authentication (SPF, DKIM, DMARC) · Brand Kit · Email footer and CAN-SPAM settings · Cookie consent banner · GA4 connection · Social and ad account connection · Marketing contact status rules · Subscription types and preference center · Up to 3 email templates, 3 landing page templates, 5 forms · Up to 5 subscription types · Up to 10 core segments · 2 training sessions"
     },
     {
@@ -528,6 +594,7 @@
       "tier": "standard",
       "hours_low": 36,
       "hours_high": 50,
+      "hours_default": 43,
       "includes": "Everything in Essential · More templates and forms · Asset naming and folder governance"
     },
     {
@@ -536,6 +603,7 @@
       "tier": "advanced",
       "hours_low": 50,
       "hours_high": 75,
+      "hours_default": 63,
       "includes": "Everything in Standard · Multiple brands or domains · Multi-language templates"
     },
     {
@@ -544,6 +612,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Single system cutover with a short freeze window"
     },
     {
@@ -552,6 +621,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 24,
+      "hours_default": 18,
       "includes": "Everything in Essential · Marketing switches (sending domain, tracking code, forms, redirects) · Parallel-run period"
     },
     {
@@ -560,6 +630,7 @@
       "tier": "advanced",
       "hours_low": 24,
       "hours_high": 45,
+      "hours_default": 35,
       "includes": "Everything in Standard · Several systems or business units cutting over · Phased cutover"
     },
     {
@@ -568,6 +639,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "Data subject requests · Retention rules · Consent capture on any forms · Privacy review of connected tools"
     },
     {
@@ -576,6 +648,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 18,
+      "hours_default": 14,
       "includes": "Everything in Essential · Consent rules on Marketing Hub subscription types · Double opt-in by country · Updating existing consent statuses · HubSpot sensitive data settings for regulated industries such as healthcare: sensitive data properties, redaction, and access controls"
     },
     {
@@ -584,6 +657,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Product library with SKUs and properties · Simple pricing"
     },
     {
@@ -592,6 +666,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 22,
+      "hours_default": 17,
       "includes": "Everything in Essential · Bundles · Discount rules and approval thresholds"
     },
     {
@@ -600,6 +675,7 @@
       "tier": "advanced",
       "hours_low": 22,
       "hours_high": 40,
+      "hours_default": 31,
       "includes": "Everything in Standard · Price books by region, currency, or segment · Complex pricing logic"
     },
     {
@@ -608,6 +684,7 @@
       "tier": "essential",
       "hours_low": 20,
       "hours_high": 35,
+      "hours_default": 28,
       "includes": "Closed-won to fulfillment process map · Basic post-sale handoff automation"
     },
     {
@@ -616,6 +693,7 @@
       "tier": "standard",
       "hours_low": 35,
       "hours_high": 60,
+      "hours_default": 48,
       "includes": "Everything in Essential · Subscription setup in HubSpot · Contract and subscription routing after close · HubSpot Contracts object with revenue ramp schedules: monthly ramp amounts, planned recurring revenue, and next 12 months billables"
     },
     {
@@ -624,6 +702,7 @@
       "tier": "advanced",
       "hours_low": 60,
       "hours_high": 125,
+      "hours_default": 93,
       "includes": "Everything in Standard · Third-party subscription tool evaluation and setup · Multi-step fulfillment automation built in sprints"
     },
     {
@@ -632,6 +711,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Renewal reminders and tasks"
     },
     {
@@ -640,6 +720,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 28,
+      "hours_default": 20,
       "includes": "Everything in Essential · Renewal pipeline and automated renewal deals · Renewal quote template · Renewal and churn reporting"
     },
     {
@@ -648,6 +729,7 @@
       "tier": "advanced",
       "hours_low": 28,
       "hours_high": 48,
+      "hours_default": 38,
       "includes": "Everything in Standard · Multi-year or co-termed renewals · Billing system involved in renewals"
     },
     {
@@ -656,6 +738,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "One combined small-team dashboard: pipeline, goals, and forecast"
     },
     {
@@ -664,6 +747,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 20,
+      "hours_default": 15,
       "includes": "Everything in Essential · Up to 3 dashboards (pipeline, forecast, activity) · Weekly summary reporting · 10 reports per dashboard"
     },
     {
@@ -672,6 +756,7 @@
       "tier": "advanced",
       "hours_low": 20,
       "hours_high": 32,
+      "hours_default": 26,
       "includes": "Everything in Standard · Executive and cross-functional dashboards · Custom report builder or datasets"
     },
     {
@@ -680,6 +765,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 14,
+      "hours_default": 11,
       "includes": "One agent (for example the prospecting agent)"
     },
     {
@@ -688,6 +774,7 @@
       "tier": "standard",
       "hours_low": 14,
       "hours_high": 30,
+      "hours_default": 22,
       "includes": "Everything in Essential · Prospecting plus rep follow-up and deal advancement agents"
     },
     {
@@ -696,6 +783,7 @@
       "tier": "advanced",
       "hours_low": 30,
       "hours_high": 55,
+      "hours_default": 43,
       "includes": "Everything in Standard · Custom data sources and Slack or other channels · Slack lead alerts with AI-summarized lead and deal signals · Pilot across several teams"
     },
     {
@@ -704,6 +792,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "Up to 5 sequences and 5 email templates · Snippet library · Up to 10 steps per sequence · Up to 10 snippets"
     },
     {
@@ -712,6 +801,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 20,
+      "hours_default": 15,
       "includes": "Everything in Essential · Meeting links and document library · Sequence reporting · Sales playbook · 1 standard sequence report"
     },
     {
@@ -720,6 +810,7 @@
       "tier": "advanced",
       "hours_low": 20,
       "hours_high": 40,
+      "hours_default": 30,
       "includes": "Everything in Standard · Sequences for several segments or motions · Sequences run in a connected tool such as Apollo"
     },
     {
@@ -728,6 +819,7 @@
       "tier": "essential",
       "hours_low": 4,
       "hours_high": 8,
+      "hours_default": 6,
       "includes": "Sales teams and sales-specific permissions · Activity logging standards"
     },
     {
@@ -736,6 +828,7 @@
       "tier": "standard",
       "hours_low": 8,
       "hours_high": 18,
+      "hours_default": 13,
       "includes": "Everything in Essential · Activity and prospecting views for reps and managers · Shared inbox"
     },
     {
@@ -744,6 +837,7 @@
       "tier": "advanced",
       "hours_low": 18,
       "hours_high": 32,
+      "hours_default": 25,
       "includes": "Everything in Standard · Several sales teams or regions with different processes"
     },
     {
@@ -752,6 +846,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 12,
+      "hours_default": 9,
       "includes": "1 Deal pipeline, up to 7 stages · Required properties per stage · Deal record views"
     },
     {
@@ -760,6 +855,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 26,
+      "hours_default": 19,
       "includes": "Everything in Essential · 3 Deal pipeline, up to 7 stages · Pipeline task automations (up to 5) · Deal routing and owner assignment · Migrating existing deals into the new pipeline · Starter pipeline dashboard (up to 10 reports)"
     },
     {
@@ -768,6 +864,7 @@
       "tier": "advanced",
       "hours_low": 26,
       "hours_high": 36,
+      "hours_default": 31,
       "includes": "Everything in Standard · 4+ Pipelines (for example new business and partner) · Stage gates with complex required data"
     },
     {
@@ -776,6 +873,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Customer agent on one channel · Existing knowledge base articles"
     },
     {
@@ -784,6 +882,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 22,
+      "hours_default": 17,
       "includes": "Everything in Essential · Several channels · Additional training sources (website, documents)"
     },
     {
@@ -792,6 +891,7 @@
       "tier": "advanced",
       "hours_low": 22,
       "hours_high": 35,
+      "hours_default": 29,
       "includes": "Everything in Standard · Handoff rules across several support teams · Multiple languages"
     },
     {
@@ -800,6 +900,7 @@
       "tier": "essential",
       "hours_low": 4,
       "hours_high": 8,
+      "hours_default": 6,
       "includes": "Support teams and permissions · Up to 3 inboxes or channels · Business hours · Up to 3 support teams"
     },
     {
@@ -808,6 +909,7 @@
       "tier": "standard",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Everything in Essential · Chat and calling channels · After-hours handling"
     },
     {
@@ -816,6 +918,7 @@
       "tier": "advanced",
       "hours_low": 12,
       "hours_high": 20,
+      "hours_default": 16,
       "includes": "Everything in Standard · Several regions or brands with separate channels"
     },
     {
@@ -824,6 +927,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Upgrades and add-ons · Change quote template"
     },
     {
@@ -832,6 +936,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 24,
+      "hours_default": 18,
       "includes": "Everything in Essential · Downgrades, quantity changes, and cancellations · Finance notifications"
     },
     {
@@ -840,6 +945,7 @@
       "tier": "advanced",
       "hours_low": 24,
       "hours_high": 40,
+      "hours_default": 32,
       "includes": "Everything in Standard · Proration and co-terming · Billing system updates"
     },
     {
@@ -848,6 +954,7 @@
       "tier": "essential",
       "hours_low": 12,
       "hours_high": 20,
+      "hours_default": 16,
       "includes": "1 ticket pipeline · Help desk workspace and agent views · Basic routing · 2 training sessions"
     },
     {
@@ -856,6 +963,7 @@
       "tier": "standard",
       "hours_low": 20,
       "hours_high": 40,
+      "hours_default": 30,
       "includes": "Everything in Essential · Up to 2 ticket pipelines · SLAs by ticket type · Service reporting"
     },
     {
@@ -864,6 +972,7 @@
       "tier": "advanced",
       "hours_low": 40,
       "hours_high": 70,
+      "hours_default": 55,
       "includes": "Everything in Standard · Several support tiers or regions · Sensitive data features"
     },
     {
@@ -872,6 +981,7 @@
       "tier": "essential",
       "hours_low": 14,
       "hours_high": 20,
+      "hours_default": 17,
       "includes": "One-way API or webhook integration, one object"
     },
     {
@@ -880,6 +990,7 @@
       "tier": "standard",
       "hours_low": 20,
       "hours_high": 35,
+      "hours_default": 28,
       "includes": "Everything in Essential · Two-way sync · Several objects"
     },
     {
@@ -888,6 +999,7 @@
       "tier": "advanced",
       "hours_low": 35,
       "hours_high": 60,
+      "hours_default": 48,
       "includes": "Everything in Standard · Custom workflow actions or code · High volume or complex error handling · Partner-built integration coordination"
     },
     {
@@ -896,6 +1008,7 @@
       "tier": "essential",
       "hours_low": 14,
       "hours_high": 22,
+      "hours_default": 18,
       "includes": "One-way sync from HubSpot at Closed Won"
     },
     {
@@ -904,6 +1017,7 @@
       "tier": "standard",
       "hours_low": 22,
       "hours_high": 50,
+      "hours_default": 36,
       "includes": "Everything in Essential · Business process maps · Two-way updates such as invoice and payment status"
     },
     {
@@ -912,6 +1026,7 @@
       "tier": "advanced",
       "hours_low": 50,
       "hours_high": 100,
+      "hours_default": 75,
       "includes": "Everything in Standard · Several entities or currencies · Custom middleware or ERP customizations"
     },
     {
@@ -920,6 +1035,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 15,
+      "hours_default": 12,
       "includes": "Up to 2 one-way flows, 5 to 10 properties each"
     },
     {
@@ -928,6 +1044,7 @@
       "tier": "standard",
       "hours_low": 15,
       "hours_high": 30,
+      "hours_default": 23,
       "includes": "Everything in Essential · Two-way sync with conflict rules · Error alerts"
     },
     {
@@ -936,6 +1053,7 @@
       "tier": "advanced",
       "hours_low": 30,
       "hours_high": 60,
+      "hours_default": 45,
       "includes": "Everything in Standard · Multiple objects and associations · Transformations · Historical backfill"
     },
     {
@@ -944,6 +1062,7 @@
       "tier": "essential",
       "hours_low": 10,
       "hours_high": 16,
+      "hours_default": 13,
       "includes": "Sign-up or trial event creates records in HubSpot · Up to 10 usage properties · Basic usage report"
     },
     {
@@ -952,6 +1071,7 @@
       "tier": "standard",
       "hours_low": 16,
       "hours_high": 30,
+      "hours_default": 23,
       "includes": "Everything in Essential · Product account or workspace object with associations · Custom events schema (up to about 10 events) · PQL criteria, usage-based lists, and alerts"
     },
     {
@@ -960,6 +1080,7 @@
       "tier": "advanced",
       "hours_low": 30,
       "hours_high": 50,
+      "hours_default": 40,
       "includes": "Everything in Standard · Warehouse or Data Hub sources (for example SQL or Snowflake) · Several products · Usage inputs to health scoring · Historical backfill"
     },
     {
@@ -968,6 +1089,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Governance only, with no sync configured: audit the Salesforce campaign hierarchy, set naming and required fields, and write a campaign creation checklist and operating procedure · Campaign member statuses"
     },
     {
@@ -976,6 +1098,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 22,
+      "hours_default": 17,
       "includes": "Everything in Essential · Campaign sync · Campaign influence on opportunities"
     },
     {
@@ -984,6 +1107,7 @@
       "tier": "advanced",
       "hours_low": 22,
       "hours_high": 36,
+      "hours_default": 29,
       "includes": "Everything in Standard · Complex Salesforce parent campaign hierarchy"
     },
     {
@@ -992,6 +1116,7 @@
       "tier": "essential",
       "hours_low": 15,
       "hours_high": 22,
+      "hours_default": 19,
       "includes": "Standard objects syncing one way or selectively"
     },
     {
@@ -1000,6 +1125,7 @@
       "tier": "standard",
       "hours_low": 22,
       "hours_high": 40,
+      "hours_default": 31,
       "includes": "Everything in Essential · Two-way sync with field ownership rules · Duplicate and orphan cleanup · Stabilizing an existing connector: audit the current setup, diagnose duplicate and orphan records, validate account matching, and align lifecycle and status mapping"
     },
     {
@@ -1008,6 +1134,7 @@
       "tier": "advanced",
       "hours_low": 40,
       "hours_high": 60,
+      "hours_default": 50,
       "includes": "Everything in Standard · Custom objects · Complex Salesforce setup (several orgs or record types)"
     },
     {
@@ -1016,6 +1143,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 9,
+      "hours_default": 8,
       "includes": "Install and sync settings for one native app"
     },
     {
@@ -1024,6 +1152,7 @@
       "tier": "standard",
       "hours_low": 9,
       "hours_high": 25,
+      "hours_default": 17,
       "includes": "Everything in Essential · Configured dialer, sales engagement, or messaging app (numbers, sequences, routing)"
     },
     {
@@ -1032,6 +1161,7 @@
       "tier": "advanced",
       "hours_low": 25,
       "hours_high": 45,
+      "hours_default": 35,
       "includes": "Everything in Standard · Telephony across many countries · Several apps working together"
     },
     {
@@ -1040,6 +1170,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "Workflow inventory and prioritization"
     },
     {
@@ -1048,6 +1179,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 28,
+      "hours_default": 20,
       "includes": "Everything in Essential · Up to 3 routing, 5 task, and 3 data hygiene workflow improvements · Operating rules"
     },
     {
@@ -1056,6 +1188,7 @@
       "tier": "advanced",
       "hours_low": 28,
       "hours_high": 48,
+      "hours_default": 38,
       "includes": "Everything in Standard · Large automation estates · Agent automation review: inventory, data access and guardrails, overlap with workflows, and retuning or retiring agents"
     },
     {
@@ -1064,6 +1197,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "Assessment only, with no execution: duplicate impact assessment, Data Hub or deduplication tool recommendation, and a remediation plan"
     },
     {
@@ -1072,6 +1206,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 20,
+      "hours_default": 15,
       "includes": "Everything in Essential · Duplicate merge rules and deduplication of contacts and companies · Suppression and do-not-contact lists · A bad-data loop: reps flag bad records, which are suppressed or re-verified · Controls to stop bad data at the source · Exception reports and a monthly review"
     },
     {
@@ -1080,6 +1215,7 @@
       "tier": "advanced",
       "hours_low": 20,
       "hours_high": 40,
+      "hours_default": 30,
       "includes": "Everything in Standard · Third-party dedup tools or Data Hub · Cleaning source data before a migration"
     },
     {
@@ -1088,6 +1224,7 @@
       "tier": "essential",
       "hours_low": 8,
       "hours_high": 12,
+      "hours_default": 10,
       "includes": "One enrichment source · Priority fields"
     },
     {
@@ -1096,6 +1233,7 @@
       "tier": "standard",
       "hours_low": 12,
       "hours_high": 24,
+      "hours_default": 18,
       "includes": "Everything in Essential · Up to 3 sources · Job-change alerts"
     },
     {
@@ -1104,6 +1242,7 @@
       "tier": "advanced",
       "hours_low": 24,
       "hours_high": 40,
+      "hours_default": 32,
       "includes": "Everything in Standard · Intent signals (up to 5) · Automated intent ingestion, replacing manual imports · Enrichment workflows built in the client's data provider (tables, waterfall lookups, verification, credit efficiency) · Coaching for the client's team on running the data provider workflows"
     },
     {
@@ -1112,6 +1251,7 @@
       "tier": "essential",
       "hours_low": 6,
       "hours_high": 10,
+      "hours_default": 8,
       "includes": "Property audit for one object"
     },
     {
@@ -1120,6 +1260,7 @@
       "tier": "standard",
       "hours_low": 10,
       "hours_high": 24,
+      "hours_default": 17,
       "includes": "Everything in Essential · All objects · Keep, consolidate, or delete decisions · Change request process"
     },
     {
@@ -1128,6 +1269,7 @@
       "tier": "advanced",
       "hours_low": 24,
       "hours_high": 40,
+      "hours_default": 32,
       "includes": "Everything in Standard · Several hundred properties · Heavy downstream dependencies (reports, workflows, integrations)"
     },
     {
@@ -1136,6 +1278,7 @@
       "tier": "essential",
       "hours_low": 4,
       "hours_high": 8,
+      "hours_default": 6,
       "includes": "Permission review · Up to 3 teams"
     },
     {
@@ -1144,6 +1287,7 @@
       "tier": "standard",
       "hours_low": 8,
       "hours_high": 16,
+      "hours_default": 12,
       "includes": "Everything in Essential · Target permission model · Up to 5 teams and 5 permission sets"
     },
     {
@@ -1152,31 +1296,8 @@
       "tier": "advanced",
       "hours_low": 16,
       "hours_high": 24,
+      "hours_default": 20,
       "includes": "Everything in Standard · Team hierarchy for reporting · Multiple business units"
-    },
-    {
-      "module_id": "managed-marketing-operations",
-      "module_name": "Managed Marketing Operations",
-      "tier": "essential",
-      "hours_low": 15,
-      "hours_high": 25,
-      "includes": "1 campaign a month"
-    },
-    {
-      "module_id": "managed-marketing-operations",
-      "module_name": "Managed Marketing Operations",
-      "tier": "standard",
-      "hours_low": 35,
-      "hours_high": 60,
-      "includes": "Everything in Essential · 2 to 3 campaigns a month"
-    },
-    {
-      "module_id": "managed-marketing-operations",
-      "module_name": "Managed Marketing Operations",
-      "tier": "advanced",
-      "hours_low": 70,
-      "hours_high": 100,
-      "includes": "Everything in Standard · 4 or more campaigns a month or several channels"
     },
     {
       "module_id": "ongoing-support-fractional-revops",
@@ -1184,6 +1305,7 @@
       "tier": "essential",
       "hours_low": 20,
       "hours_high": 30,
+      "hours_default": 25,
       "includes": "20, or 30 hours a month"
     },
     {
@@ -1192,6 +1314,7 @@
       "tier": "standard",
       "hours_low": 40,
       "hours_high": 50,
+      "hours_default": 45,
       "includes": "Everything in Essential · 40, 50, or 60 hours a month · Small projects from the backlog"
     },
     {
@@ -1200,6 +1323,7 @@
       "tier": "advanced",
       "hours_low": 60,
       "hours_high": 80,
+      "hours_default": 70,
       "includes": "Everything in Standard · 60, 70, 80, or more hours a month · Fractional RevOps leadership · Large Projects from the backlog"
     }
   ]

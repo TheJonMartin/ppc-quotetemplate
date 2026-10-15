@@ -16,13 +16,19 @@
       "name": "pm_rounding",
       "label": "pm_rounding",
       "type": "TEXT"
+    },
+    {
+      "name": "default_hours_basis",
+      "label": "default_hours_basis",
+      "type": "TEXT"
     }
   ],
   "rows": [
     {
       "hourly_rate": 225,
       "currency": "USD",
-      "pm_rounding": "nearest hour, halves up"
+      "pm_rounding": "nearest hour, halves up",
+      "default_hours_basis": "midpoint"
     }
   ]
 }
