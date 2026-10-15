@@ -97,19 +97,22 @@ write('products.json', M.map((m) => ({
   sku: `PPC-${m.module_id}`, name: m.name, price: RATE,
   recurringbillingfrequency: MONTHLY.has(m.module_id) ? 'monthly' : null,
   properties: {
-    ppc_module_id: m.module_id, ppc_module_family: m.family, ppc_five_c: m.five_c,
+    ppc_module_id: m.module_id, ppc_module_family: m.family, ppc_5c_stage: m.five_c,
     ppc_process_area: m.process_area || '', ppc_competency: m.competency || '', ppc_form_stages: (m.form || []).join(';'),
   },
 })));
 
 // ---------- property options ----------
 const opt = (value, label, i) => ({ value, label, displayOrder: i, hidden: false });
+// Option values mirror what is configured in the portal: the label is the value (HubSpot generated them),
+// except ppc_workstream (workstream_id) and ppc_form_stages (single letter).
+const optL = (arr) => arr.map((l, i) => opt(l, l, i));
 write('properties.json', {
   ppc_workstream: W.map((w, i) => opt(w.workstream_id, w.name, i)),
-  ppc_tier: TIERS.map((t, i) => opt(t, t[0].toUpperCase() + t.slice(1), i)),
-  ppc_module_role: [['core', 'Core'], ['default', 'Default'], ['optional', 'Optional'], ['pm', 'PM']].map(([v, l], i) => opt(v, l, i)),
-  ppc_module_family: [...new Set(M.map((m) => m.family))].map((f, i) => opt(f.toLowerCase().replace(/[^a-z0-9]+/g, '_'), f, i)),
-  ppc_five_c: [...new Set(M.map((m) => m.five_c))].map((f, i) => opt(f.toLowerCase().replace(/[^a-z0-9]+/g, '_'), f, i)),
+  ppc_tier: optL(['Essential', 'Standard', 'Advanced']),
+  ppc_module_role: optL(['Core', 'Default', 'Optional', 'PM']),
+  ppc_module_family: optL([...new Set(M.map((m) => m.family))]),
+  ppc_5c_stage: optL([...new Set(M.map((m) => m.five_c))]),
   ppc_form_stages: [['F', 'F - Foundation'], ['O', 'O - Operationalize'], ['R', 'R - Refine'], ['M', 'M - Multiply']].map(([v, l], i) => opt(v, l, i)),
 });
 

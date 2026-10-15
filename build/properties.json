@@ -75,19 +75,19 @@
   ],
   "ppc_tier": [
     {
-      "value": "essential",
+      "value": "Essential",
       "label": "Essential",
       "displayOrder": 0,
       "hidden": false
     },
     {
-      "value": "standard",
+      "value": "Standard",
       "label": "Standard",
       "displayOrder": 1,
       "hidden": false
     },
     {
-      "value": "advanced",
+      "value": "Advanced",
       "label": "Advanced",
       "displayOrder": 2,
       "hidden": false
@@ -95,25 +95,25 @@
   ],
   "ppc_module_role": [
     {
-      "value": "core",
+      "value": "Core",
       "label": "Core",
       "displayOrder": 0,
       "hidden": false
     },
     {
-      "value": "default",
+      "value": "Default",
       "label": "Default",
       "displayOrder": 1,
       "hidden": false
     },
     {
-      "value": "optional",
+      "value": "Optional",
       "label": "Optional",
       "displayOrder": 2,
       "hidden": false
     },
     {
-      "value": "pm",
+      "value": "PM",
       "label": "PM",
       "displayOrder": 3,
       "hidden": false
@@ -121,81 +121,81 @@
   ],
   "ppc_module_family": [
     {
-      "value": "assess",
+      "value": "Assess",
       "label": "Assess",
       "displayOrder": 0,
       "hidden": false
     },
     {
-      "value": "design",
+      "value": "Design",
       "label": "Design",
       "displayOrder": 1,
       "hidden": false
     },
     {
-      "value": "engagement",
+      "value": "Engagement",
       "label": "Engagement",
       "displayOrder": 2,
       "hidden": false
     },
     {
-      "value": "implement",
+      "value": "Implement",
       "label": "Implement",
       "displayOrder": 3,
       "hidden": false
     },
     {
-      "value": "integrate",
+      "value": "Integrate",
       "label": "Integrate",
       "displayOrder": 4,
       "hidden": false
     },
     {
-      "value": "optimize",
+      "value": "Optimize",
       "label": "Optimize",
       "displayOrder": 5,
       "hidden": false
     },
     {
-      "value": "support_enablement",
+      "value": "Support & enablement",
       "label": "Support & enablement",
       "displayOrder": 6,
       "hidden": false
     }
   ],
-  "ppc_five_c": [
+  "ppc_5c_stage": [
     {
-      "value": "core",
+      "value": "Core",
       "label": "Core",
       "displayOrder": 0,
       "hidden": false
     },
     {
-      "value": "capture",
+      "value": "Capture",
       "label": "Capture",
       "displayOrder": 1,
       "hidden": false
     },
     {
-      "value": "cultivate",
+      "value": "Cultivate",
       "label": "Cultivate",
       "displayOrder": 2,
       "hidden": false
     },
     {
-      "value": "convert",
+      "value": "Convert",
       "label": "Convert",
       "displayOrder": 3,
       "hidden": false
     },
     {
-      "value": "cross_cutting",
+      "value": "Cross-cutting",
       "label": "Cross-cutting",
       "displayOrder": 4,
       "hidden": false
     },
     {
-      "value": "close",
+      "value": "Close",
       "label": "Close",
       "displayOrder": 5,
       "hidden": false
