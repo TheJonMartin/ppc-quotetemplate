@@ -1,0 +1,52 @@
+{
+  "findings": [
+    "no competency (excluded from FORM journey): platform-cutover-and-decommission",
+    "no tiers (cannot be priced): portal-customization",
+    "no competency (excluded from FORM journey): portal-customization",
+    "not in any workstream: managed-marketing-operations",
+    "no competency (excluded from FORM journey): ongoing-support-fractional-revops"
+  ],
+  "sample": {
+    "lines": {
+      "client-onboarding": {
+        "moduleHours": 15,
+        "pmHours": 0,
+        "hours": 15,
+        "amount": 3375
+      },
+      "sales-hub-launch": {
+        "moduleHours": 195,
+        "pmHours": 29,
+        "hours": 224,
+        "amount": 50400
+      },
+      "quoting-cpq": {
+        "moduleHours": 62,
+        "pmHours": 9,
+        "hours": 71,
+        "amount": 15975
+      }
+    },
+    "oneTimeHours": 310,
+    "oneTimeAmount": 69750,
+    "expected": {
+      "hours": 310,
+      "amount": 69750
+    },
+    "matchesV2": true,
+    "supportEssentialTier": {
+      "hours_low": 20,
+      "hours_high": 30,
+      "includes": [
+        "20, or 30 hours a month"
+      ]
+    },
+    "supportNote": "Essential tier is 20-30 hrs/mo. v2's $4,500/mo needs the rep to set 20 hrs; the hours_high default would give 6750/mo."
+  },
+  "counts": {
+    "workstreams": 12,
+    "modules": 51,
+    "productsToCreate": 51,
+    "workstreamModuleRows": 185
+  }
+}

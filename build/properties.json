@@ -1,0 +1,230 @@
+{
+  "ppc_workstream": [
+    {
+      "value": "client-onboarding",
+      "label": "Client Onboarding",
+      "displayOrder": 0,
+      "hidden": false
+    },
+    {
+      "value": "crm-marketing-hub-launch",
+      "label": "CRM & Marketing Hub Launch",
+      "displayOrder": 1,
+      "hidden": false
+    },
+    {
+      "value": "marketing-hub-launch",
+      "label": "Marketing Hub Launch",
+      "displayOrder": 2,
+      "hidden": false
+    },
+    {
+      "value": "sales-hub-launch",
+      "label": "Sales Hub Launch",
+      "displayOrder": 3,
+      "hidden": false
+    },
+    {
+      "value": "hubspot-optimization",
+      "label": "HubSpot Optimization & RevOps Support",
+      "displayOrder": 4,
+      "hidden": false
+    },
+    {
+      "value": "lead-management-attribution",
+      "label": "Lead Management & Attribution",
+      "displayOrder": 5,
+      "hidden": false
+    },
+    {
+      "value": "quoting-cpq",
+      "label": "Quoting & CPQ",
+      "displayOrder": 6,
+      "hidden": false
+    },
+    {
+      "value": "service-hub-launch",
+      "label": "Service Hub Launch",
+      "displayOrder": 7,
+      "hidden": false
+    },
+    {
+      "value": "marketing-platform-migration",
+      "label": "Marketing Platform Migration",
+      "displayOrder": 8,
+      "hidden": false
+    },
+    {
+      "value": "contract-subscription-management",
+      "label": "Contract & Subscription Management",
+      "displayOrder": 9,
+      "hidden": false
+    },
+    {
+      "value": "crm-platform-migration",
+      "label": "CRM Platform Migration",
+      "displayOrder": 10,
+      "hidden": false
+    },
+    {
+      "value": "ai-automation",
+      "label": "AI & Automation",
+      "displayOrder": 11,
+      "hidden": false
+    }
+  ],
+  "ppc_tier": [
+    {
+      "value": "essential",
+      "label": "Essential",
+      "displayOrder": 0,
+      "hidden": false
+    },
+    {
+      "value": "standard",
+      "label": "Standard",
+      "displayOrder": 1,
+      "hidden": false
+    },
+    {
+      "value": "advanced",
+      "label": "Advanced",
+      "displayOrder": 2,
+      "hidden": false
+    }
+  ],
+  "ppc_module_role": [
+    {
+      "value": "core",
+      "label": "Core",
+      "displayOrder": 0,
+      "hidden": false
+    },
+    {
+      "value": "default",
+      "label": "Default",
+      "displayOrder": 1,
+      "hidden": false
+    },
+    {
+      "value": "optional",
+      "label": "Optional",
+      "displayOrder": 2,
+      "hidden": false
+    },
+    {
+      "value": "pm",
+      "label": "PM",
+      "displayOrder": 3,
+      "hidden": false
+    }
+  ],
+  "ppc_module_family": [
+    {
+      "value": "assess",
+      "label": "Assess",
+      "displayOrder": 0,
+      "hidden": false
+    },
+    {
+      "value": "design",
+      "label": "Design",
+      "displayOrder": 1,
+      "hidden": false
+    },
+    {
+      "value": "engagement",
+      "label": "Engagement",
+      "displayOrder": 2,
+      "hidden": false
+    },
+    {
+      "value": "implement",
+      "label": "Implement",
+      "displayOrder": 3,
+      "hidden": false
+    },
+    {
+      "value": "integrate",
+      "label": "Integrate",
+      "displayOrder": 4,
+      "hidden": false
+    },
+    {
+      "value": "optimize",
+      "label": "Optimize",
+      "displayOrder": 5,
+      "hidden": false
+    },
+    {
+      "value": "support_enablement",
+      "label": "Support & enablement",
+      "displayOrder": 6,
+      "hidden": false
+    }
+  ],
+  "ppc_five_c": [
+    {
+      "value": "core",
+      "label": "Core",
+      "displayOrder": 0,
+      "hidden": false
+    },
+    {
+      "value": "capture",
+      "label": "Capture",
+      "displayOrder": 1,
+      "hidden": false
+    },
+    {
+      "value": "cultivate",
+      "label": "Cultivate",
+      "displayOrder": 2,
+      "hidden": false
+    },
+    {
+      "value": "convert",
+      "label": "Convert",
+      "displayOrder": 3,
+      "hidden": false
+    },
+    {
+      "value": "cross_cutting",
+      "label": "Cross-cutting",
+      "displayOrder": 4,
+      "hidden": false
+    },
+    {
+      "value": "close",
+      "label": "Close",
+      "displayOrder": 5,
+      "hidden": false
+    }
+  ],
+  "ppc_form_stages": [
+    {
+      "value": "F",
+      "label": "F - Foundation",
+      "displayOrder": 0,
+      "hidden": false
+    },
+    {
+      "value": "O",
+      "label": "O - Operationalize",
+      "displayOrder": 1,
+      "hidden": false
+    },
+    {
+      "value": "R",
+      "label": "R - Refine",
+      "displayOrder": 2,
+      "hidden": false
+    },
+    {
+      "value": "M",
+      "label": "M - Multiply",
+      "displayOrder": 3,
+      "hidden": false
+    }
+  ]
+}

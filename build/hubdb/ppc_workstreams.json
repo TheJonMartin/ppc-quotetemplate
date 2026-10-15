@@ -1,0 +1,219 @@
+{
+  "name": "ppc_workstreams",
+  "label": "PPC Workstreams",
+  "columns": [
+    {
+      "name": "workstream_id",
+      "label": "workstream_id",
+      "type": "TEXT"
+    },
+    {
+      "name": "name",
+      "label": "name",
+      "type": "TEXT"
+    },
+    {
+      "name": "ws_order",
+      "label": "ws_order",
+      "type": "NUMBER"
+    },
+    {
+      "name": "form_stages",
+      "label": "form_stages",
+      "type": "TEXT"
+    },
+    {
+      "name": "description",
+      "label": "description",
+      "type": "TEXT"
+    },
+    {
+      "name": "audience",
+      "label": "audience",
+      "type": "TEXT"
+    },
+    {
+      "name": "include_pm",
+      "label": "include_pm",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "pm_pct",
+      "label": "pm_pct",
+      "type": "NUMBER"
+    },
+    {
+      "name": "color",
+      "label": "color",
+      "type": "TEXT"
+    },
+    {
+      "name": "ink",
+      "label": "ink",
+      "type": "TEXT"
+    },
+    {
+      "name": "status",
+      "label": "status",
+      "type": "TEXT"
+    }
+  ],
+  "rows": [
+    {
+      "workstream_id": "client-onboarding",
+      "name": "Client Onboarding",
+      "ws_order": 0,
+      "form_stages": "",
+      "description": "Kickoff, internal handoff from sales, onboarding portal, and reverse-demo walkthrough of current processes. Added to every new-client SOW alongside the other workstream(s).",
+      "audience": "Every new client",
+      "include_pm": false,
+      "pm_pct": 15,
+      "color": "#0B57FF",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "name": "CRM & Marketing Hub Launch",
+      "ws_order": 1,
+      "form_stages": "F",
+      "description": "Designs the data model, configures the CRM and Marketing Hub, migrates data, and stands up campaigns and lifecycle.",
+      "audience": "New HubSpot implementations led by marketing, often migrating from another CRM or marketing platform",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#7A73FF",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "name": "Marketing Hub Launch",
+      "ws_order": 1.5,
+      "form_stages": "F",
+      "description": "Configures the portal, users, and permissions, sets up Marketing Hub, and brings in lists and subscription statuses, without the lifecycle and sales handoff work of a full CRM launch.",
+      "audience": "Clients using HubSpot as their marketing platform while the CRM of record lives elsewhere (for example DealCloud or Salesforce)",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#00D4FE",
+      "ink": "#002C59",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "name": "Sales Hub Launch",
+      "ws_order": 2,
+      "form_stages": "F",
+      "description": "Designs the data model, configures the CRM and Sales Hub, builds the pipeline and lead process, and gives reps the tools and reporting to work in HubSpot.",
+      "audience": "New HubSpot implementations led by sales",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#002C59",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "name": "HubSpot Optimization & RevOps Support",
+      "ws_order": 3,
+      "form_stages": "O,R",
+      "description": "Starts with an assessment and a prioritized roadmap, then works through cleanup, structure, and improvements as planned modules, with Ongoing RevOps Support for unplanned requests. Sold as blocks of hours, a monthly retainer sized to the plan, or a flexible monthly retainer.",
+      "audience": "Existing HubSpot portals that need cleanup, structure, improvements, or ongoing RevOps support",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#275899",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "name": "Lead Management & Attribution",
+      "ws_order": 4,
+      "form_stages": "F",
+      "description": "Defines the lead process and lifecycle, automates routing, scoring, and handoffs, and builds source tracking and attribution reporting.",
+      "audience": "Clients whose leads are falling through the cracks or who cannot see what marketing is producing",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#0B57FF",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "name": "Quoting & CPQ",
+      "ws_order": 5,
+      "form_stages": "F",
+      "description": "Reviews the current quoting process, then builds the product library, pricing rules, quote templates, and approvals in HubSpot.",
+      "audience": "Clients quoting outside HubSpot or with complex pricing",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#7A73FF",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "name": "Service Hub Launch",
+      "ws_order": 6,
+      "form_stages": "F",
+      "description": "Sets up the portal foundation, help desk, tickets, routing, and SLAs, with optional knowledge base, customer onboarding, and customer health scoring.",
+      "audience": "Clients bringing support or customer success into HubSpot",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#00D4FE",
+      "ink": "#002C59",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "name": "Marketing Platform Migration",
+      "ws_order": 7,
+      "form_stages": "F",
+      "description": "Inventories the old platform and decides what moves, rebuilds the approved assets and automation in HubSpot, migrates records and subscription statuses, and sets up Marketing Hub to run on.",
+      "audience": "Clients moving to HubSpot from another marketing platform (for example Marketo, Pardot, or Mailchimp)",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#002C59",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "name": "Contract & Subscription Management",
+      "ws_order": 8,
+      "form_stages": "F",
+      "description": "Covers the full contract lifecycle in HubSpot: products and pricing, quotes, subscription creation, mid-term amendments, renewals, and the pipelines that run them.",
+      "audience": "Clients selling subscriptions or recurring contracts who need quoting, renewals, and mid-term changes in HubSpot",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#275899",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "name": "CRM Platform Migration",
+      "ws_order": 10,
+      "form_stages": "F",
+      "description": "Designs the HubSpot data model, cleans and migrates data from the old CRM, configures the CRM, and cuts over and shuts down the old platform.",
+      "audience": "Clients moving to HubSpot from another CRM or sales platform (for example Salesforce, Salesloft, or SuiteCRM)",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#0B57FF",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    },
+    {
+      "workstream_id": "ai-automation",
+      "name": "AI & Automation",
+      "ws_order": 11,
+      "form_stages": "O,M",
+      "description": "Confirms which processes are stable enough to automate, then adds AI agents, automated outreach and enrichment, self-service, and automation flows on top of a proven foundation.",
+      "audience": "Clients with a working HubSpot foundation who want to scale it with AI agents and automation",
+      "include_pm": true,
+      "pm_pct": 15,
+      "color": "#7A73FF",
+      "ink": "#FFFFFF",
+      "status": "Draft"
+    }
+  ]
+}

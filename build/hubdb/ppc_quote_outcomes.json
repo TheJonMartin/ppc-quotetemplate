@@ -1,0 +1,38 @@
+{
+  "name": "ppc_quote_outcomes",
+  "label": "PPC Quote Outcomes",
+  "columns": [
+    {
+      "name": "key",
+      "label": "key",
+      "type": "TEXT"
+    },
+    {
+      "name": "headline",
+      "label": "headline",
+      "type": "TEXT"
+    },
+    {
+      "name": "proof",
+      "label": "proof",
+      "type": "TEXT"
+    }
+  ],
+  "rows": [
+    {
+      "key": "forecast",
+      "headline": "A forecast you can defend",
+      "proof": "Run the weekly pipeline review from a dashboard, not anecdotes."
+    },
+    {
+      "key": "governed_quotes",
+      "headline": "Faster, governed quotes",
+      "proof": "Quotes built from one product library, with discount approvals built in."
+    },
+    {
+      "key": "durable_process",
+      "headline": "A process that outlasts people",
+      "proof": "Documented, trained and owned by your team, not held in one person's head."
+    }
+  ]
+}

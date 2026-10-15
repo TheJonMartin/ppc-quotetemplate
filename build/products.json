@@ -1,0 +1,716 @@
+[
+  {
+    "sku": "PPC-crm-migration-discovery",
+    "name": "CRM Migration Discovery",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "crm-migration-discovery",
+      "ppc_module_family": "Assess",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-hubspot-portal-audit-and-roadmap",
+    "name": "Current-State Assessment",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "hubspot-portal-audit-and-roadmap",
+      "ppc_module_family": "Assess",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F;R"
+    }
+  },
+  {
+    "sku": "PPC-marketing-migration-discovery",
+    "name": "Marketing Migration Discovery",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "marketing-migration-discovery",
+      "ppc_module_family": "Assess",
+      "ppc_five_c": "Capture",
+      "ppc_process_area": "Demand Capture",
+      "ppc_competency": "Marketing campaign management",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-customer-journey-mapping",
+    "name": "Customer Journey Mapping",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "customer-journey-mapping",
+      "ppc_module_family": "Design",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Client Experience",
+      "ppc_competency": "Journey & touchpoints",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-gtm-process-and-tech-stack-design",
+    "name": "GTM Process Design",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "gtm-process-and-tech-stack-design",
+      "ppc_module_family": "Design",
+      "ppc_five_c": "Convert",
+      "ppc_process_area": "Pipeline Management",
+      "ppc_competency": "Sales methodology",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-system-design-and-data-model",
+    "name": "Solution Design & Data Architecture",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "system-design-and-data-model",
+      "ppc_module_family": "Design",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-onboarding-and-project-kickoff",
+    "name": "Client Onboarding & Kickoff",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "onboarding-and-project-kickoff",
+      "ppc_module_family": "Engagement",
+      "ppc_five_c": "Cross-cutting",
+      "ppc_process_area": "",
+      "ppc_competency": "",
+      "ppc_form_stages": ""
+    }
+  },
+  {
+    "sku": "PPC-project-management",
+    "name": "Project Management",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "project-management",
+      "ppc_module_family": "Engagement",
+      "ppc_five_c": "Cross-cutting",
+      "ppc_process_area": "",
+      "ppc_competency": "",
+      "ppc_form_stages": "F;O;R;M"
+    }
+  },
+  {
+    "sku": "PPC-cpq-quote-implementation",
+    "name": "CPQ & Quoting",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "cpq-quote-implementation",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Convert",
+      "ppc_process_area": "CPQ",
+      "ppc_competency": "Quote generation & approval",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-core-crm-configuration",
+    "name": "CRM Configuration",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "core-crm-configuration",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-campaign-and-conversion-infrastructure",
+    "name": "Campaigns, Nurture & Events",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "campaign-and-conversion-infrastructure",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Capture",
+      "ppc_process_area": "Demand Capture",
+      "ppc_competency": "Marketing campaign management",
+      "ppc_form_stages": "F;O"
+    }
+  },
+  {
+    "sku": "PPC-custom-crm-cards",
+    "name": "Custom CRM Cards",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "custom-crm-cards",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F;O"
+    }
+  },
+  {
+    "sku": "PPC-customer-health-score",
+    "name": "Customer Health Scoring",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "customer-health-score",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Client Experience",
+      "ppc_competency": "Health scoring",
+      "ppc_form_stages": "O;R"
+    }
+  },
+  {
+    "sku": "PPC-customer-onboarding",
+    "name": "Customer Onboarding",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "customer-onboarding",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Service Delivery",
+      "ppc_competency": "Onboarding execution",
+      "ppc_form_stages": "F;O"
+    }
+  },
+  {
+    "sku": "PPC-customer-portal-self-service",
+    "name": "Customer Portal",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "customer-portal-self-service",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Customer Support",
+      "ppc_competency": "Knowledge base & chat",
+      "ppc_form_stages": "O;M"
+    }
+  },
+  {
+    "sku": "PPC-data-migration",
+    "name": "Data Migration",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "data-migration",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-sales-goals-and-forecast-tool-setup",
+    "name": "Forecasting & Goals",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "sales-goals-and-forecast-tool-setup",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Convert",
+      "ppc_process_area": "Pipeline Management",
+      "ppc_competency": "Pipeline Forecasting",
+      "ppc_form_stages": "O;R"
+    }
+  },
+  {
+    "sku": "PPC-knowledge-base-implementation",
+    "name": "Knowledge Base",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "knowledge-base-implementation",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Customer Support",
+      "ppc_competency": "Knowledge base & chat",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-lead-and-lifecycle-management",
+    "name": "Lead Management",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "lead-and-lifecycle-management",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Capture",
+      "ppc_process_area": "Demand Capture",
+      "ppc_competency": "Lead capture, routing & scoring",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-lifecycle-configuration",
+    "name": "Lifecycle Configuration",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "lifecycle-configuration",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Capture",
+      "ppc_process_area": "Lead Handoff to Sales",
+      "ppc_competency": "Lead qualification & response",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-marketing-automation-platform-migration",
+    "name": "Marketing Asset Migration",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "marketing-automation-platform-migration",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Capture",
+      "ppc_process_area": "Demand Capture",
+      "ppc_competency": "Marketing campaign management",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-core-marketing-hub-setup",
+    "name": "Marketing Hub Setup",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "core-marketing-hub-setup",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Capture",
+      "ppc_process_area": "Demand Capture",
+      "ppc_competency": "Marketing campaign management",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-platform-cutover-and-decommission",
+    "name": "Platform Cutover & Decommission",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "platform-cutover-and-decommission",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cross-cutting",
+      "ppc_process_area": "",
+      "ppc_competency": "",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-portal-customization",
+    "name": "Portal Customization",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "portal-customization",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cross-cutting",
+      "ppc_process_area": "",
+      "ppc_competency": "",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-gdpr-and-data-privacy-setup",
+    "name": "Privacy & Compliance",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "gdpr-and-data-privacy-setup",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "Data quality & governance",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-product-library-design",
+    "name": "Product Library & Pricing",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "product-library-design",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Convert",
+      "ppc_process_area": "CPQ",
+      "ppc_competency": "Product Library & Price Books",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-quote-to-cash-build-sprint",
+    "name": "Quote-to-Cash & Subscriptions",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "quote-to-cash-build-sprint",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Convert",
+      "ppc_process_area": "Convert-to-Close Handoff",
+      "ppc_competency": "Order-to-system flow",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-renewals-management",
+    "name": "Renewal Management",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "renewals-management",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Retention & Growth",
+      "ppc_competency": "Renewals",
+      "ppc_form_stages": "F;O"
+    }
+  },
+  {
+    "sku": "PPC-sales-pipeline-reporting-and-dashboards",
+    "name": "Sales & Revenue Reporting",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "sales-pipeline-reporting-and-dashboards",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Revenue Intelligence",
+      "ppc_competency": "Reporting & dashboards",
+      "ppc_form_stages": "F;O;R"
+    }
+  },
+  {
+    "sku": "PPC-ai-sales-workflow-automation",
+    "name": "Sales AI Agents",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "ai-sales-workflow-automation",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Convert",
+      "ppc_process_area": "Pipeline Management",
+      "ppc_competency": "Sales methodology",
+      "ppc_form_stages": "O;M"
+    }
+  },
+  {
+    "sku": "PPC-sequences-templates-and-playbooks",
+    "name": "Sales Enablement",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "sequences-templates-and-playbooks",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Convert",
+      "ppc_process_area": "Pipeline Management",
+      "ppc_competency": "Sales methodology",
+      "ppc_form_stages": "O;M"
+    }
+  },
+  {
+    "sku": "PPC-sales-hub-setup-pipeline-and-activity",
+    "name": "Sales Hub Setup",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "sales-hub-setup-pipeline-and-activity",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Convert",
+      "ppc_process_area": "Pipeline Management",
+      "ppc_competency": "Sales methodology",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-sales-pipeline-design-and-build",
+    "name": "Sales Pipeline Setup & Management",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "sales-pipeline-design-and-build",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Convert",
+      "ppc_process_area": "Pipeline Management",
+      "ppc_competency": "Pipeline Architecture",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-customer-agent-and-knowledge-base-setup",
+    "name": "Service AI Agents",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "customer-agent-and-knowledge-base-setup",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Customer Support",
+      "ppc_competency": "Knowledge base & chat",
+      "ppc_form_stages": "O;M"
+    }
+  },
+  {
+    "sku": "PPC-help-desk-and-workspace-setup",
+    "name": "Service Hub Setup",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "help-desk-and-workspace-setup",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Service Delivery",
+      "ppc_competency": "Systems & tooling",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-subscription-amendments",
+    "name": "Subscription Amendments",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "subscription-amendments",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Retention & Growth",
+      "ppc_competency": "Amendment",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-service-hub-setup-help-desk-tickets-routing-slas",
+    "name": "Tickets & Help Desk",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "service-hub-setup-help-desk-tickets-routing-slas",
+      "ppc_module_family": "Implement",
+      "ppc_five_c": "Cultivate",
+      "ppc_process_area": "Customer Support",
+      "ppc_competency": "Ticketing, SLA & response",
+      "ppc_form_stages": "F;O"
+    }
+  },
+  {
+    "sku": "PPC-custom-integration-api-workflow",
+    "name": "Custom API Integration",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "custom-integration-api-workflow",
+      "ppc_module_family": "Integrate",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-accounting-erp-integration",
+    "name": "ERP & Accounting Integration",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "accounting-erp-integration",
+      "ppc_module_family": "Integrate",
+      "ppc_five_c": "Close",
+      "ppc_process_area": "Revenue & Finance Operations",
+      "ppc_competency": "Billing & invoicing",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-custom-integration-zapier-middleware",
+    "name": "No-Code Integration",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "custom-integration-zapier-middleware",
+      "ppc_module_family": "Integrate",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-product-usage-data",
+    "name": "Product Usage Data",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "product-usage-data",
+      "ppc_module_family": "Integrate",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F;O"
+    }
+  },
+  {
+    "sku": "PPC-salesforce-campaign-alignment",
+    "name": "Salesforce Campaign Alignment",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "salesforce-campaign-alignment",
+      "ppc_module_family": "Integrate",
+      "ppc_five_c": "Capture",
+      "ppc_process_area": "Demand Capture",
+      "ppc_competency": "Marketing data, attribution & source reporting",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-salesforce-integration-setup",
+    "name": "Salesforce Integration",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "salesforce-integration-setup",
+      "ppc_module_family": "Integrate",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-third-party-native-integration-setup",
+    "name": "Third-Party App Integrations",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "third-party-native-integration-setup",
+      "ppc_module_family": "Integrate",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-workflow-audit-and-cleanup",
+    "name": "Automation Audit & Optimization",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "workflow-audit-and-cleanup",
+      "ppc_module_family": "Optimize",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "R;M"
+    }
+  },
+  {
+    "sku": "PPC-data-cleanup-and-deduplication",
+    "name": "Data Cleanup & Quality",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "data-cleanup-and-deduplication",
+      "ppc_module_family": "Optimize",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "Data quality & governance",
+      "ppc_form_stages": "F;O"
+    }
+  },
+  {
+    "sku": "PPC-data-enrichment",
+    "name": "Data Enrichment",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "data-enrichment",
+      "ppc_module_family": "Optimize",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "HubSpot architecture, data model, integrations & enrichment",
+      "ppc_form_stages": "R;M"
+    }
+  },
+  {
+    "sku": "PPC-property-audit-and-governance",
+    "name": "Property Audit & Governance",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "property-audit-and-governance",
+      "ppc_module_family": "Optimize",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "Data quality & governance",
+      "ppc_form_stages": "F;O"
+    }
+  },
+  {
+    "sku": "PPC-teams-roles-and-permissions",
+    "name": "Roles, Teams & Permissions",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "teams-roles-and-permissions",
+      "ppc_module_family": "Optimize",
+      "ppc_five_c": "Core",
+      "ppc_process_area": "Systems & Data Governance",
+      "ppc_competency": "Data quality & governance",
+      "ppc_form_stages": "F"
+    }
+  },
+  {
+    "sku": "PPC-managed-marketing-operations",
+    "name": "Managed Marketing Operations",
+    "price": 225,
+    "recurringbillingfrequency": null,
+    "properties": {
+      "ppc_module_id": "managed-marketing-operations",
+      "ppc_module_family": "Support & enablement",
+      "ppc_five_c": "Capture",
+      "ppc_process_area": "Demand Capture",
+      "ppc_competency": "Marketing campaign management",
+      "ppc_form_stages": "O"
+    }
+  },
+  {
+    "sku": "PPC-ongoing-support-fractional-revops",
+    "name": "Ongoing RevOps Support",
+    "price": 225,
+    "recurringbillingfrequency": "monthly",
+    "properties": {
+      "ppc_module_id": "ongoing-support-fractional-revops",
+      "ppc_module_family": "Support & enablement",
+      "ppc_five_c": "Cross-cutting",
+      "ppc_process_area": "",
+      "ppc_competency": "",
+      "ppc_form_stages": "O;R"
+    }
+  }
+]

@@ -1,0 +1,1328 @@
+{
+  "name": "ppc_workstream_modules",
+  "label": "PPC Workstream Modules",
+  "columns": [
+    {
+      "name": "workstream_id",
+      "label": "workstream_id",
+      "type": "TEXT"
+    },
+    {
+      "name": "module_id",
+      "label": "module_id",
+      "type": "TEXT"
+    },
+    {
+      "name": "module_name",
+      "label": "module_name",
+      "type": "TEXT"
+    },
+    {
+      "name": "role",
+      "label": "role",
+      "type": "TEXT"
+    },
+    {
+      "name": "default_tier",
+      "label": "default_tier",
+      "type": "TEXT"
+    }
+  ],
+  "rows": [
+    {
+      "workstream_id": "client-onboarding",
+      "module_id": "onboarding-and-project-kickoff",
+      "module_name": "Client Onboarding & Kickoff",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "system-design-and-data-model",
+      "module_name": "Solution Design & Data Architecture",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "core-crm-configuration",
+      "module_name": "CRM Configuration",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "core-marketing-hub-setup",
+      "module_name": "Marketing Hub Setup",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "data-migration",
+      "module_name": "Data Migration",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "data-cleanup-and-deduplication",
+      "module_name": "Data Cleanup & Quality",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "campaign-and-conversion-infrastructure",
+      "module_name": "Campaigns, Nurture & Events",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "lifecycle-configuration",
+      "module_name": "Lifecycle Configuration",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "lead-and-lifecycle-management",
+      "module_name": "Lead Management",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "accounting-erp-integration",
+      "module_name": "ERP & Accounting Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "custom-crm-cards",
+      "module_name": "Custom CRM Cards",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "salesforce-campaign-alignment",
+      "module_name": "Salesforce Campaign Alignment",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-marketing-hub-launch",
+      "module_id": "customer-journey-mapping",
+      "module_name": "Customer Journey Mapping",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "core-crm-configuration",
+      "module_name": "CRM Configuration",
+      "role": "core",
+      "default_tier": "essential"
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "core-marketing-hub-setup",
+      "module_name": "Marketing Hub Setup",
+      "role": "core",
+      "default_tier": "essential"
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "data-migration",
+      "module_name": "Data Migration",
+      "role": "default",
+      "default_tier": "essential"
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "gdpr-and-data-privacy-setup",
+      "module_name": "Privacy & Compliance",
+      "role": "default",
+      "default_tier": "standard"
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "system-design-and-data-model",
+      "module_name": "Solution Design & Data Architecture",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "campaign-and-conversion-infrastructure",
+      "module_name": "Campaigns, Nurture & Events",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "lifecycle-configuration",
+      "module_name": "Lifecycle Configuration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "lead-and-lifecycle-management",
+      "module_name": "Lead Management",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "data-cleanup-and-deduplication",
+      "module_name": "Data Cleanup & Quality",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "salesforce-campaign-alignment",
+      "module_name": "Salesforce Campaign Alignment",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-hub-launch",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "system-design-and-data-model",
+      "module_name": "Solution Design & Data Architecture",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "core-crm-configuration",
+      "module_name": "CRM Configuration",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "sales-hub-setup-pipeline-and-activity",
+      "module_name": "Sales Hub Setup",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "lead-and-lifecycle-management",
+      "module_name": "Lead Management",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "lifecycle-configuration",
+      "module_name": "Lifecycle Configuration",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "sales-pipeline-design-and-build",
+      "module_name": "Sales Pipeline Setup & Management",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "product-library-design",
+      "module_name": "Product Library & Pricing",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "sequences-templates-and-playbooks",
+      "module_name": "Sales Enablement",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "sales-pipeline-reporting-and-dashboards",
+      "module_name": "Sales & Revenue Reporting",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "data-migration",
+      "module_name": "Data Migration",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "data-cleanup-and-deduplication",
+      "module_name": "Data Cleanup & Quality",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "gtm-process-and-tech-stack-design",
+      "module_name": "GTM Process Design",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "sales-goals-and-forecast-tool-setup",
+      "module_name": "Forecasting & Goals",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "accounting-erp-integration",
+      "module_name": "ERP & Accounting Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "gdpr-and-data-privacy-setup",
+      "module_name": "Privacy & Compliance",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "renewals-management",
+      "module_name": "Renewal Management",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "custom-crm-cards",
+      "module_name": "Custom CRM Cards",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "customer-journey-mapping",
+      "module_name": "Customer Journey Mapping",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "sales-hub-launch",
+      "module_id": "product-usage-data",
+      "module_name": "Product Usage Data",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "hubspot-portal-audit-and-roadmap",
+      "module_name": "Current-State Assessment",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "property-audit-and-governance",
+      "module_name": "Property Audit & Governance",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "data-cleanup-and-deduplication",
+      "module_name": "Data Cleanup & Quality",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "lifecycle-configuration",
+      "module_name": "Lifecycle Configuration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "lead-and-lifecycle-management",
+      "module_name": "Lead Management",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "data-enrichment",
+      "module_name": "Data Enrichment",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "system-design-and-data-model",
+      "module_name": "Solution Design & Data Architecture",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "workflow-audit-and-cleanup",
+      "module_name": "Automation Audit & Optimization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "teams-roles-and-permissions",
+      "module_name": "Roles, Teams & Permissions",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "sales-pipeline-design-and-build",
+      "module_name": "Sales Pipeline Setup & Management",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "sales-pipeline-reporting-and-dashboards",
+      "module_name": "Sales & Revenue Reporting",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "customer-onboarding",
+      "module_name": "Customer Onboarding",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "ongoing-support-fractional-revops",
+      "module_name": "Ongoing RevOps Support",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "accounting-erp-integration",
+      "module_name": "ERP & Accounting Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "custom-crm-cards",
+      "module_name": "Custom CRM Cards",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "customer-journey-mapping",
+      "module_name": "Customer Journey Mapping",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "hubspot-optimization",
+      "module_id": "product-usage-data",
+      "module_name": "Product Usage Data",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "lead-and-lifecycle-management",
+      "module_name": "Lead Management",
+      "role": "core",
+      "default_tier": "standard"
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "lifecycle-configuration",
+      "module_name": "Lifecycle Configuration",
+      "role": "core",
+      "default_tier": "essential"
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "campaign-and-conversion-infrastructure",
+      "module_name": "Campaigns, Nurture & Events",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "sequences-templates-and-playbooks",
+      "module_name": "Sales Enablement",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "sales-pipeline-design-and-build",
+      "module_name": "Sales Pipeline Setup & Management",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "data-cleanup-and-deduplication",
+      "module_name": "Data Cleanup & Quality",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "sales-pipeline-reporting-and-dashboards",
+      "module_name": "Sales & Revenue Reporting",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "data-enrichment",
+      "module_name": "Data Enrichment",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "accounting-erp-integration",
+      "module_name": "ERP & Accounting Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "custom-crm-cards",
+      "module_name": "Custom CRM Cards",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "lead-management-attribution",
+      "module_id": "salesforce-campaign-alignment",
+      "module_name": "Salesforce Campaign Alignment",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "cpq-quote-implementation",
+      "module_name": "CPQ & Quoting",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "product-library-design",
+      "module_name": "Product Library & Pricing",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "hubspot-portal-audit-and-roadmap",
+      "module_name": "Current-State Assessment",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "quote-to-cash-build-sprint",
+      "module_name": "Quote-to-Cash & Subscriptions",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "sales-pipeline-design-and-build",
+      "module_name": "Sales Pipeline Setup & Management",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "accounting-erp-integration",
+      "module_name": "ERP & Accounting Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "renewals-management",
+      "module_name": "Renewal Management",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "custom-crm-cards",
+      "module_name": "Custom CRM Cards",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "quoting-cpq",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "core-crm-configuration",
+      "module_name": "CRM Configuration",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "help-desk-and-workspace-setup",
+      "module_name": "Service Hub Setup",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "service-hub-setup-help-desk-tickets-routing-slas",
+      "module_name": "Tickets & Help Desk",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "data-migration",
+      "module_name": "Data Migration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "knowledge-base-implementation",
+      "module_name": "Knowledge Base",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "customer-onboarding",
+      "module_name": "Customer Onboarding",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "customer-health-score",
+      "module_name": "Customer Health Scoring",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "accounting-erp-integration",
+      "module_name": "ERP & Accounting Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "custom-crm-cards",
+      "module_name": "Custom CRM Cards",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "service-hub-launch",
+      "module_id": "gdpr-and-data-privacy-setup",
+      "module_name": "Privacy & Compliance",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "marketing-migration-discovery",
+      "module_name": "Marketing Migration Discovery",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "marketing-automation-platform-migration",
+      "module_name": "Marketing Asset Migration",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "platform-cutover-and-decommission",
+      "module_name": "Platform Cutover & Decommission",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "data-migration",
+      "module_name": "Data Migration",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "core-marketing-hub-setup",
+      "module_name": "Marketing Hub Setup",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "gdpr-and-data-privacy-setup",
+      "module_name": "Privacy & Compliance",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "campaign-and-conversion-infrastructure",
+      "module_name": "Campaigns, Nurture & Events",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "lifecycle-configuration",
+      "module_name": "Lifecycle Configuration",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "data-cleanup-and-deduplication",
+      "module_name": "Data Cleanup & Quality",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "lead-and-lifecycle-management",
+      "module_name": "Lead Management",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "accounting-erp-integration",
+      "module_name": "ERP & Accounting Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "custom-crm-cards",
+      "module_name": "Custom CRM Cards",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "marketing-platform-migration",
+      "module_id": "salesforce-campaign-alignment",
+      "module_name": "Salesforce Campaign Alignment",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "product-library-design",
+      "module_name": "Product Library & Pricing",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "cpq-quote-implementation",
+      "module_name": "CPQ & Quoting",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "quote-to-cash-build-sprint",
+      "module_name": "Quote-to-Cash & Subscriptions",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "subscription-amendments",
+      "module_name": "Subscription Amendments",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "renewals-management",
+      "module_name": "Renewal Management",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "sales-pipeline-design-and-build",
+      "module_name": "Sales Pipeline Setup & Management",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "data-migration",
+      "module_name": "Data Migration",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "sales-pipeline-reporting-and-dashboards",
+      "module_name": "Sales & Revenue Reporting",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "accounting-erp-integration",
+      "module_name": "ERP & Accounting Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "customer-health-score",
+      "module_name": "Customer Health Scoring",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "custom-crm-cards",
+      "module_name": "Custom CRM Cards",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "contract-subscription-management",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "crm-migration-discovery",
+      "module_name": "CRM Migration Discovery",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "system-design-and-data-model",
+      "module_name": "Solution Design & Data Architecture",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "data-cleanup-and-deduplication",
+      "module_name": "Data Cleanup & Quality",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "data-migration",
+      "module_name": "Data Migration",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "core-crm-configuration",
+      "module_name": "CRM Configuration",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "platform-cutover-and-decommission",
+      "module_name": "Platform Cutover & Decommission",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "sales-hub-setup-pipeline-and-activity",
+      "module_name": "Sales Hub Setup",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "sales-pipeline-design-and-build",
+      "module_name": "Sales Pipeline Setup & Management",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "lifecycle-configuration",
+      "module_name": "Lifecycle Configuration",
+      "role": "default",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "salesforce-integration-setup",
+      "module_name": "Salesforce Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "third-party-native-integration-setup",
+      "module_name": "Third-Party App Integrations",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "sequences-templates-and-playbooks",
+      "module_name": "Sales Enablement",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "sales-pipeline-reporting-and-dashboards",
+      "module_name": "Sales & Revenue Reporting",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "workflow-audit-and-cleanup",
+      "module_name": "Automation Audit & Optimization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "accounting-erp-integration",
+      "module_name": "ERP & Accounting Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "custom-crm-cards",
+      "module_name": "Custom CRM Cards",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "crm-platform-migration",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "ai-automation",
+      "module_id": "workflow-audit-and-cleanup",
+      "module_name": "Automation Audit & Optimization",
+      "role": "core",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "ai-automation",
+      "module_id": "ai-sales-workflow-automation",
+      "module_name": "Sales AI Agents",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "ai-automation",
+      "module_id": "customer-agent-and-knowledge-base-setup",
+      "module_name": "Service AI Agents",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "ai-automation",
+      "module_id": "sequences-templates-and-playbooks",
+      "module_name": "Sales Enablement",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "ai-automation",
+      "module_id": "data-enrichment",
+      "module_name": "Data Enrichment",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "ai-automation",
+      "module_id": "customer-portal-self-service",
+      "module_name": "Customer Portal",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "ai-automation",
+      "module_id": "custom-integration-zapier-middleware",
+      "module_name": "No-Code Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "ai-automation",
+      "module_id": "custom-integration-api-workflow",
+      "module_name": "Custom API Integration",
+      "role": "optional",
+      "default_tier": ""
+    },
+    {
+      "workstream_id": "ai-automation",
+      "module_id": "portal-customization",
+      "module_name": "Portal Customization",
+      "role": "optional",
+      "default_tier": ""
+    }
+  ]
+}

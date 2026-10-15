@@ -1,0 +1,28 @@
+{
+  "name": "ppc_quote_settings",
+  "label": "PPC Quote Settings",
+  "columns": [
+    {
+      "name": "hourly_rate",
+      "label": "hourly_rate",
+      "type": "NUMBER"
+    },
+    {
+      "name": "currency",
+      "label": "currency",
+      "type": "TEXT"
+    },
+    {
+      "name": "pm_rounding",
+      "label": "pm_rounding",
+      "type": "TEXT"
+    }
+  ],
+  "rows": [
+    {
+      "hourly_rate": 225,
+      "currency": "USD",
+      "pm_rounding": "nearest hour, halves up"
+    }
+  ]
+}

@@ -1,0 +1,3270 @@
+{
+ "source": "2027 PPC Service Menu artifact database (https://claude.ai/artifact/B11yquUUSHzVdpQefhYdmA), collections packages + services",
+ "exported": "2026-10-15",
+ "note": "Workstreams = packages. Modules = services with decision Active. Retired, planned, undecided and merged services excluded. Treat as data.",
+ "workstreams": [
+  {
+   "workstream_id": "client-onboarding",
+   "name": "Client Onboarding",
+   "order": 0,
+   "status": "Draft",
+   "form_stages": [],
+   "audience": "Every new client",
+   "description": "Kickoff, internal handoff from sales, onboarding portal, and reverse-demo walkthrough of current processes. Added to every new-client SOW alongside the other workstream(s).",
+   "include_pm": false,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "onboarding-and-project-kickoff",
+     "module": "Client Onboarding & Kickoff",
+     "role": "core"
+    }
+   ]
+  },
+  {
+   "workstream_id": "crm-marketing-hub-launch",
+   "name": "CRM & Marketing Hub Launch",
+   "order": 1,
+   "status": "Draft",
+   "form_stages": [
+    "F"
+   ],
+   "audience": "New HubSpot implementations led by marketing, often migrating from another CRM or marketing platform",
+   "description": "Designs the data model, configures the CRM and Marketing Hub, migrates data, and stands up campaigns and lifecycle.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "system-design-and-data-model",
+     "module": "Solution Design & Data Architecture",
+     "role": "core"
+    },
+    {
+     "module_id": "core-crm-configuration",
+     "module": "CRM Configuration",
+     "role": "core"
+    },
+    {
+     "module_id": "core-marketing-hub-setup",
+     "module": "Marketing Hub Setup",
+     "role": "core"
+    },
+    {
+     "module_id": "data-migration",
+     "module": "Data Migration",
+     "role": "default"
+    },
+    {
+     "module_id": "data-cleanup-and-deduplication",
+     "module": "Data Cleanup & Quality",
+     "role": "optional"
+    },
+    {
+     "module_id": "campaign-and-conversion-infrastructure",
+     "module": "Campaigns, Nurture & Events",
+     "role": "optional"
+    },
+    {
+     "module_id": "lifecycle-configuration",
+     "module": "Lifecycle Configuration",
+     "role": "core"
+    },
+    {
+     "module_id": "lead-and-lifecycle-management",
+     "module": "Lead Management",
+     "role": "default"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "accounting-erp-integration",
+     "module": "ERP & Accounting Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-crm-cards",
+     "module": "Custom CRM Cards",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-campaign-alignment",
+     "module": "Salesforce Campaign Alignment",
+     "role": "optional"
+    },
+    {
+     "module_id": "customer-journey-mapping",
+     "module": "Customer Journey Mapping",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "marketing-hub-launch",
+   "name": "Marketing Hub Launch",
+   "order": 1.5,
+   "status": "Draft",
+   "form_stages": [
+    "F"
+   ],
+   "audience": "Clients using HubSpot as their marketing platform while the CRM of record lives elsewhere (for example DealCloud or Salesforce)",
+   "description": "Configures the portal, users, and permissions, sets up Marketing Hub, and brings in lists and subscription statuses, without the lifecycle and sales handoff work of a full CRM launch.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "core-crm-configuration",
+     "module": "CRM Configuration",
+     "role": "core",
+     "default_tier": "essential"
+    },
+    {
+     "module_id": "core-marketing-hub-setup",
+     "module": "Marketing Hub Setup",
+     "role": "core",
+     "default_tier": "essential"
+    },
+    {
+     "module_id": "data-migration",
+     "module": "Data Migration",
+     "role": "default",
+     "default_tier": "essential"
+    },
+    {
+     "module_id": "gdpr-and-data-privacy-setup",
+     "module": "Privacy & Compliance",
+     "role": "default",
+     "default_tier": "standard"
+    },
+    {
+     "module_id": "system-design-and-data-model",
+     "module": "Solution Design & Data Architecture",
+     "role": "optional"
+    },
+    {
+     "module_id": "campaign-and-conversion-infrastructure",
+     "module": "Campaigns, Nurture & Events",
+     "role": "optional"
+    },
+    {
+     "module_id": "lifecycle-configuration",
+     "module": "Lifecycle Configuration",
+     "role": "optional"
+    },
+    {
+     "module_id": "lead-and-lifecycle-management",
+     "module": "Lead Management",
+     "role": "optional"
+    },
+    {
+     "module_id": "data-cleanup-and-deduplication",
+     "module": "Data Cleanup & Quality",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-campaign-alignment",
+     "module": "Salesforce Campaign Alignment",
+     "role": "optional"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "sales-hub-launch",
+   "name": "Sales Hub Launch",
+   "order": 2,
+   "status": "Draft",
+   "form_stages": [
+    "F"
+   ],
+   "audience": "New HubSpot implementations led by sales",
+   "description": "Designs the data model, configures the CRM and Sales Hub, builds the pipeline and lead process, and gives reps the tools and reporting to work in HubSpot.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "system-design-and-data-model",
+     "module": "Solution Design & Data Architecture",
+     "role": "core"
+    },
+    {
+     "module_id": "core-crm-configuration",
+     "module": "CRM Configuration",
+     "role": "core"
+    },
+    {
+     "module_id": "sales-hub-setup-pipeline-and-activity",
+     "module": "Sales Hub Setup",
+     "role": "core"
+    },
+    {
+     "module_id": "lead-and-lifecycle-management",
+     "module": "Lead Management",
+     "role": "default"
+    },
+    {
+     "module_id": "lifecycle-configuration",
+     "module": "Lifecycle Configuration",
+     "role": "core"
+    },
+    {
+     "module_id": "sales-pipeline-design-and-build",
+     "module": "Sales Pipeline Setup & Management",
+     "role": "default"
+    },
+    {
+     "module_id": "product-library-design",
+     "module": "Product Library & Pricing",
+     "role": "default"
+    },
+    {
+     "module_id": "sequences-templates-and-playbooks",
+     "module": "Sales Enablement",
+     "role": "default"
+    },
+    {
+     "module_id": "sales-pipeline-reporting-and-dashboards",
+     "module": "Sales & Revenue Reporting",
+     "role": "default"
+    },
+    {
+     "module_id": "data-migration",
+     "module": "Data Migration",
+     "role": "default"
+    },
+    {
+     "module_id": "data-cleanup-and-deduplication",
+     "module": "Data Cleanup & Quality",
+     "role": "optional"
+    },
+    {
+     "module_id": "gtm-process-and-tech-stack-design",
+     "module": "GTM Process Design",
+     "role": "optional"
+    },
+    {
+     "module_id": "sales-goals-and-forecast-tool-setup",
+     "module": "Forecasting & Goals",
+     "role": "optional"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "accounting-erp-integration",
+     "module": "ERP & Accounting Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "gdpr-and-data-privacy-setup",
+     "module": "Privacy & Compliance",
+     "role": "optional"
+    },
+    {
+     "module_id": "renewals-management",
+     "module": "Renewal Management",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-crm-cards",
+     "module": "Custom CRM Cards",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    },
+    {
+     "module_id": "customer-journey-mapping",
+     "module": "Customer Journey Mapping",
+     "role": "optional"
+    },
+    {
+     "module_id": "product-usage-data",
+     "module": "Product Usage Data",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "hubspot-optimization",
+   "name": "HubSpot Optimization & RevOps Support",
+   "order": 3,
+   "status": "Draft",
+   "form_stages": [
+    "O",
+    "R"
+   ],
+   "audience": "Existing HubSpot portals that need cleanup, structure, improvements, or ongoing RevOps support",
+   "description": "Starts with an assessment and a prioritized roadmap, then works through cleanup, structure, and improvements as planned modules, with Ongoing RevOps Support for unplanned requests. Sold as blocks of hours, a monthly retainer sized to the plan, or a flexible monthly retainer.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "hubspot-portal-audit-and-roadmap",
+     "module": "Current-State Assessment",
+     "role": "default"
+    },
+    {
+     "module_id": "property-audit-and-governance",
+     "module": "Property Audit & Governance",
+     "role": "default"
+    },
+    {
+     "module_id": "data-cleanup-and-deduplication",
+     "module": "Data Cleanup & Quality",
+     "role": "default"
+    },
+    {
+     "module_id": "lifecycle-configuration",
+     "module": "Lifecycle Configuration",
+     "role": "optional"
+    },
+    {
+     "module_id": "lead-and-lifecycle-management",
+     "module": "Lead Management",
+     "role": "optional"
+    },
+    {
+     "module_id": "data-enrichment",
+     "module": "Data Enrichment",
+     "role": "optional"
+    },
+    {
+     "module_id": "system-design-and-data-model",
+     "module": "Solution Design & Data Architecture",
+     "role": "optional"
+    },
+    {
+     "module_id": "workflow-audit-and-cleanup",
+     "module": "Automation Audit & Optimization",
+     "role": "optional"
+    },
+    {
+     "module_id": "teams-roles-and-permissions",
+     "module": "Roles, Teams & Permissions",
+     "role": "optional"
+    },
+    {
+     "module_id": "sales-pipeline-design-and-build",
+     "module": "Sales Pipeline Setup & Management",
+     "role": "optional"
+    },
+    {
+     "module_id": "sales-pipeline-reporting-and-dashboards",
+     "module": "Sales & Revenue Reporting",
+     "role": "optional"
+    },
+    {
+     "module_id": "customer-onboarding",
+     "module": "Customer Onboarding",
+     "role": "optional"
+    },
+    {
+     "module_id": "ongoing-support-fractional-revops",
+     "module": "Ongoing RevOps Support",
+     "role": "optional"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "accounting-erp-integration",
+     "module": "ERP & Accounting Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-crm-cards",
+     "module": "Custom CRM Cards",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    },
+    {
+     "module_id": "customer-journey-mapping",
+     "module": "Customer Journey Mapping",
+     "role": "optional"
+    },
+    {
+     "module_id": "product-usage-data",
+     "module": "Product Usage Data",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "lead-management-attribution",
+   "name": "Lead Management & Attribution",
+   "order": 4,
+   "status": "Draft",
+   "form_stages": [
+    "F"
+   ],
+   "audience": "Clients whose leads are falling through the cracks or who cannot see what marketing is producing",
+   "description": "Defines the lead process and lifecycle, automates routing, scoring, and handoffs, and builds source tracking and attribution reporting.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "lead-and-lifecycle-management",
+     "module": "Lead Management",
+     "role": "core",
+     "default_tier": "standard"
+    },
+    {
+     "module_id": "lifecycle-configuration",
+     "module": "Lifecycle Configuration",
+     "role": "core",
+     "default_tier": "essential"
+    },
+    {
+     "module_id": "campaign-and-conversion-infrastructure",
+     "module": "Campaigns, Nurture & Events",
+     "role": "optional"
+    },
+    {
+     "module_id": "sequences-templates-and-playbooks",
+     "module": "Sales Enablement",
+     "role": "optional"
+    },
+    {
+     "module_id": "sales-pipeline-design-and-build",
+     "module": "Sales Pipeline Setup & Management",
+     "role": "optional"
+    },
+    {
+     "module_id": "data-cleanup-and-deduplication",
+     "module": "Data Cleanup & Quality",
+     "role": "optional"
+    },
+    {
+     "module_id": "sales-pipeline-reporting-and-dashboards",
+     "module": "Sales & Revenue Reporting",
+     "role": "optional"
+    },
+    {
+     "module_id": "data-enrichment",
+     "module": "Data Enrichment",
+     "role": "optional"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "accounting-erp-integration",
+     "module": "ERP & Accounting Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-crm-cards",
+     "module": "Custom CRM Cards",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-campaign-alignment",
+     "module": "Salesforce Campaign Alignment",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "quoting-cpq",
+   "name": "Quoting & CPQ",
+   "order": 5,
+   "status": "Draft",
+   "form_stages": [
+    "F"
+   ],
+   "audience": "Clients quoting outside HubSpot or with complex pricing",
+   "description": "Reviews the current quoting process, then builds the product library, pricing rules, quote templates, and approvals in HubSpot.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "cpq-quote-implementation",
+     "module": "CPQ & Quoting",
+     "role": "core"
+    },
+    {
+     "module_id": "product-library-design",
+     "module": "Product Library & Pricing",
+     "role": "default"
+    },
+    {
+     "module_id": "hubspot-portal-audit-and-roadmap",
+     "module": "Current-State Assessment",
+     "role": "default"
+    },
+    {
+     "module_id": "quote-to-cash-build-sprint",
+     "module": "Quote-to-Cash & Subscriptions",
+     "role": "optional"
+    },
+    {
+     "module_id": "sales-pipeline-design-and-build",
+     "module": "Sales Pipeline Setup & Management",
+     "role": "optional"
+    },
+    {
+     "module_id": "accounting-erp-integration",
+     "module": "ERP & Accounting Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "renewals-management",
+     "module": "Renewal Management",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-crm-cards",
+     "module": "Custom CRM Cards",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "service-hub-launch",
+   "name": "Service Hub Launch",
+   "order": 6,
+   "status": "Draft",
+   "form_stages": [
+    "F"
+   ],
+   "audience": "Clients bringing support or customer success into HubSpot",
+   "description": "Sets up the portal foundation, help desk, tickets, routing, and SLAs, with optional knowledge base, customer onboarding, and customer health scoring.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "core-crm-configuration",
+     "module": "CRM Configuration",
+     "role": "default"
+    },
+    {
+     "module_id": "help-desk-and-workspace-setup",
+     "module": "Service Hub Setup",
+     "role": "core"
+    },
+    {
+     "module_id": "service-hub-setup-help-desk-tickets-routing-slas",
+     "module": "Tickets & Help Desk",
+     "role": "core"
+    },
+    {
+     "module_id": "data-migration",
+     "module": "Data Migration",
+     "role": "optional"
+    },
+    {
+     "module_id": "knowledge-base-implementation",
+     "module": "Knowledge Base",
+     "role": "optional"
+    },
+    {
+     "module_id": "customer-onboarding",
+     "module": "Customer Onboarding",
+     "role": "optional"
+    },
+    {
+     "module_id": "customer-health-score",
+     "module": "Customer Health Scoring",
+     "role": "default"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "accounting-erp-integration",
+     "module": "ERP & Accounting Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-crm-cards",
+     "module": "Custom CRM Cards",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    },
+    {
+     "module_id": "gdpr-and-data-privacy-setup",
+     "module": "Privacy & Compliance",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "marketing-platform-migration",
+   "name": "Marketing Platform Migration",
+   "order": 7,
+   "status": "Draft",
+   "form_stages": [
+    "F"
+   ],
+   "audience": "Clients moving to HubSpot from another marketing platform (for example Marketo, Pardot, or Mailchimp)",
+   "description": "Inventories the old platform and decides what moves, rebuilds the approved assets and automation in HubSpot, migrates records and subscription statuses, and sets up Marketing Hub to run on.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "marketing-migration-discovery",
+     "module": "Marketing Migration Discovery",
+     "role": "core"
+    },
+    {
+     "module_id": "marketing-automation-platform-migration",
+     "module": "Marketing Asset Migration",
+     "role": "core"
+    },
+    {
+     "module_id": "platform-cutover-and-decommission",
+     "module": "Platform Cutover & Decommission",
+     "role": "core"
+    },
+    {
+     "module_id": "data-migration",
+     "module": "Data Migration",
+     "role": "core"
+    },
+    {
+     "module_id": "core-marketing-hub-setup",
+     "module": "Marketing Hub Setup",
+     "role": "core"
+    },
+    {
+     "module_id": "gdpr-and-data-privacy-setup",
+     "module": "Privacy & Compliance",
+     "role": "default"
+    },
+    {
+     "module_id": "campaign-and-conversion-infrastructure",
+     "module": "Campaigns, Nurture & Events",
+     "role": "default"
+    },
+    {
+     "module_id": "lifecycle-configuration",
+     "module": "Lifecycle Configuration",
+     "role": "default"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "data-cleanup-and-deduplication",
+     "module": "Data Cleanup & Quality",
+     "role": "optional"
+    },
+    {
+     "module_id": "lead-and-lifecycle-management",
+     "module": "Lead Management",
+     "role": "optional"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "accounting-erp-integration",
+     "module": "ERP & Accounting Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-crm-cards",
+     "module": "Custom CRM Cards",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-campaign-alignment",
+     "module": "Salesforce Campaign Alignment",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "contract-subscription-management",
+   "name": "Contract & Subscription Management",
+   "order": 8,
+   "status": "Draft",
+   "form_stages": [
+    "F"
+   ],
+   "audience": "Clients selling subscriptions or recurring contracts who need quoting, renewals, and mid-term changes in HubSpot",
+   "description": "Covers the full contract lifecycle in HubSpot: products and pricing, quotes, subscription creation, mid-term amendments, renewals, and the pipelines that run them.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "product-library-design",
+     "module": "Product Library & Pricing",
+     "role": "core"
+    },
+    {
+     "module_id": "cpq-quote-implementation",
+     "module": "CPQ & Quoting",
+     "role": "core"
+    },
+    {
+     "module_id": "quote-to-cash-build-sprint",
+     "module": "Quote-to-Cash & Subscriptions",
+     "role": "core"
+    },
+    {
+     "module_id": "subscription-amendments",
+     "module": "Subscription Amendments",
+     "role": "core"
+    },
+    {
+     "module_id": "renewals-management",
+     "module": "Renewal Management",
+     "role": "core"
+    },
+    {
+     "module_id": "sales-pipeline-design-and-build",
+     "module": "Sales Pipeline Setup & Management",
+     "role": "core"
+    },
+    {
+     "module_id": "data-migration",
+     "module": "Data Migration",
+     "role": "default"
+    },
+    {
+     "module_id": "sales-pipeline-reporting-and-dashboards",
+     "module": "Sales & Revenue Reporting",
+     "role": "default"
+    },
+    {
+     "module_id": "accounting-erp-integration",
+     "module": "ERP & Accounting Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "customer-health-score",
+     "module": "Customer Health Scoring",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-crm-cards",
+     "module": "Custom CRM Cards",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "crm-platform-migration",
+   "name": "CRM Platform Migration",
+   "order": 10,
+   "status": "Draft",
+   "form_stages": [
+    "F"
+   ],
+   "audience": "Clients moving to HubSpot from another CRM or sales platform (for example Salesforce, Salesloft, or SuiteCRM)",
+   "description": "Designs the HubSpot data model, cleans and migrates data from the old CRM, configures the CRM, and cuts over and shuts down the old platform.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "crm-migration-discovery",
+     "module": "CRM Migration Discovery",
+     "role": "core"
+    },
+    {
+     "module_id": "system-design-and-data-model",
+     "module": "Solution Design & Data Architecture",
+     "role": "core"
+    },
+    {
+     "module_id": "data-cleanup-and-deduplication",
+     "module": "Data Cleanup & Quality",
+     "role": "core"
+    },
+    {
+     "module_id": "data-migration",
+     "module": "Data Migration",
+     "role": "core"
+    },
+    {
+     "module_id": "core-crm-configuration",
+     "module": "CRM Configuration",
+     "role": "core"
+    },
+    {
+     "module_id": "platform-cutover-and-decommission",
+     "module": "Platform Cutover & Decommission",
+     "role": "core"
+    },
+    {
+     "module_id": "sales-hub-setup-pipeline-and-activity",
+     "module": "Sales Hub Setup",
+     "role": "default"
+    },
+    {
+     "module_id": "sales-pipeline-design-and-build",
+     "module": "Sales Pipeline Setup & Management",
+     "role": "default"
+    },
+    {
+     "module_id": "lifecycle-configuration",
+     "module": "Lifecycle Configuration",
+     "role": "default"
+    },
+    {
+     "module_id": "salesforce-integration-setup",
+     "module": "Salesforce Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "third-party-native-integration-setup",
+     "module": "Third-Party App Integrations",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "sequences-templates-and-playbooks",
+     "module": "Sales Enablement",
+     "role": "optional"
+    },
+    {
+     "module_id": "sales-pipeline-reporting-and-dashboards",
+     "module": "Sales & Revenue Reporting",
+     "role": "optional"
+    },
+    {
+     "module_id": "workflow-audit-and-cleanup",
+     "module": "Automation Audit & Optimization",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "accounting-erp-integration",
+     "module": "ERP & Accounting Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-crm-cards",
+     "module": "Custom CRM Cards",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    }
+   ]
+  },
+  {
+   "workstream_id": "ai-automation",
+   "name": "AI & Automation",
+   "order": 11,
+   "status": "Draft",
+   "form_stages": [
+    "O",
+    "M"
+   ],
+   "audience": "Clients with a working HubSpot foundation who want to scale it with AI agents and automation",
+   "description": "Confirms which processes are stable enough to automate, then adds AI agents, automated outreach and enrichment, self-service, and automation flows on top of a proven foundation.",
+   "include_pm": true,
+   "pm_pct": 15,
+   "modules": [
+    {
+     "module_id": "workflow-audit-and-cleanup",
+     "module": "Automation Audit & Optimization",
+     "role": "core"
+    },
+    {
+     "module_id": "ai-sales-workflow-automation",
+     "module": "Sales AI Agents",
+     "role": "optional"
+    },
+    {
+     "module_id": "customer-agent-and-knowledge-base-setup",
+     "module": "Service AI Agents",
+     "role": "optional"
+    },
+    {
+     "module_id": "sequences-templates-and-playbooks",
+     "module": "Sales Enablement",
+     "role": "optional"
+    },
+    {
+     "module_id": "data-enrichment",
+     "module": "Data Enrichment",
+     "role": "optional"
+    },
+    {
+     "module_id": "customer-portal-self-service",
+     "module": "Customer Portal",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-zapier-middleware",
+     "module": "No-Code Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "custom-integration-api-workflow",
+     "module": "Custom API Integration",
+     "role": "optional"
+    },
+    {
+     "module_id": "portal-customization",
+     "module": "Portal Customization",
+     "role": "optional"
+    }
+   ]
+  }
+ ],
+ "modules": [
+  {
+   "module_id": "crm-migration-discovery",
+   "name": "CRM Migration Discovery",
+   "family": "Assess",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Current-State Process & Workflow Assessment",
+   "tiers": {
+    "advanced": {
+     "hours_low": 60,
+     "hours_high": 100,
+     "includes": [
+      "Everything in Standard",
+      "Several business units, many integrations"
+     ]
+    },
+    "essential": {
+     "hours_low": 20,
+     "hours_high": 30,
+     "includes": [
+      "One CRM, standard objects"
+     ]
+    },
+    "standard": {
+     "hours_low": 30,
+     "hours_high": 60,
+     "includes": [
+      "Everything in Essential",
+      "Custom objects, automations, and reports to inventory"
+     ]
+    }
+   },
+   "module_hours_low": 20,
+   "module_hours_high": 100
+  },
+  {
+   "module_id": "hubspot-portal-audit-and-roadmap",
+   "name": "Current-State Assessment",
+   "family": "Assess",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F",
+    "R"
+   ],
+   "hs_catalog_name": "RevOps Infrastructure Audit; Current-State Process & Workflow Assessment",
+   "tiers": {
+    "advanced": {
+     "hours_low": 25,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Several business units or portals",
+      "Integration and data flow audit"
+     ]
+    },
+    "essential": {
+     "hours_low": 5,
+     "hours_high": 15,
+     "includes": [
+      "Portal audit for one hub",
+      "Prioritized findings",
+      "Two 1-hour process walkthroughs"
+     ]
+    },
+    "standard": {
+     "hours_low": 15,
+     "hours_high": 25,
+     "includes": [
+      "Everything in Essential",
+      "Up to 2 process walkthroughs",
+      "Property fill-rate analysis",
+      "Sequenced roadmap"
+     ]
+    }
+   },
+   "module_hours_low": 15,
+   "module_hours_high": 30
+  },
+  {
+   "module_id": "marketing-migration-discovery",
+   "name": "Marketing Migration Discovery",
+   "family": "Assess",
+   "five_c": "Capture",
+   "process_area": "Demand Capture",
+   "competency": "Marketing campaign management",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Current-State Process & Workflow Assessment",
+   "tiers": {
+    "advanced": {
+     "hours_low": 28,
+     "hours_high": 45,
+     "includes": [
+      "Everything in Standard",
+      "Large library or several business units"
+     ]
+    },
+    "essential": {
+     "hours_low": 10,
+     "hours_high": 16,
+     "includes": [
+      "Inventory of a small asset library"
+     ]
+    },
+    "standard": {
+     "hours_low": 16,
+     "hours_high": 28,
+     "includes": [
+      "Everything in Essential",
+      "Medium library with workflows"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "customer-journey-mapping",
+   "name": "Customer Journey Mapping",
+   "family": "Design",
+   "five_c": "Cultivate",
+   "process_area": "Client Experience",
+   "competency": "Journey & touchpoints",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "—",
+   "tiers": {
+    "advanced": {
+     "hours_low": 28,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Several segments, product lines, or regions",
+      "Customer interviews or survey input"
+     ]
+    },
+    "essential": {
+     "hours_low": 12,
+     "hours_high": 18,
+     "includes": [
+      "1 persona, first touch through renewal or retention",
+      "Up to 3 workshops",
+      "Journey map and touchpoint inventory",
+      "HubSpot requirements list"
+     ]
+    },
+    "standard": {
+     "hours_low": 18,
+     "hours_high": 28,
+     "includes": [
+      "Everything in Essential",
+      "Up to 3 personas, for example buyer and member or end user",
+      "Gap analysis between teams",
+      "Prioritized roadmap mapped to modules"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "gtm-process-and-tech-stack-design",
+   "name": "GTM Process Design",
+   "family": "Design",
+   "five_c": "Convert",
+   "process_area": "Pipeline Management",
+   "competency": "Sales methodology",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Sales Motion & Coverage Model Design",
+   "tiers": {
+    "advanced": {
+     "hours_low": 28,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Several motions (for example product-led and sales-led)",
+      "Several segments or regions"
+     ]
+    },
+    "essential": {
+     "hours_low": 12,
+     "hours_high": 18,
+     "includes": [
+      "Up to 3 working sessions",
+      "Lifecycle and lead status definitions",
+      "Single go-to-market motion"
+     ]
+    },
+    "standard": {
+     "hours_low": 18,
+     "hours_high": 28,
+     "includes": [
+      "Everything in Essential",
+      "ICP and segmentation model",
+      "Tech stack recommendation"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "system-design-and-data-model",
+   "name": "Solution Design & Data Architecture",
+   "family": "Design",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "System Design & Data Model",
+   "tiers": {
+    "advanced": {
+     "hours_low": 24,
+     "hours_high": 50,
+     "includes": [
+      "Everything in Standard",
+      "Several business units",
+      "Complex associations or account hierarchy",
+      "Partner dependencies"
+     ]
+    },
+    "essential": {
+     "hours_low": 4,
+     "hours_high": 8,
+     "includes": [
+      "Light design for a single team, folded into the build"
+     ]
+    },
+    "standard": {
+     "hours_low": 8,
+     "hours_high": 24,
+     "includes": [
+      "Everything in Essential",
+      "Full target data model",
+      "Field mapping from source systems",
+      "Up to 20 custom properties per object",
+      "Integration discovery: requirements workshops, system-of-record boundaries, sync direction, API and volume constraints, and a Phase 2 build plan"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "onboarding-and-project-kickoff",
+   "name": "Client Onboarding & Kickoff",
+   "family": "Engagement",
+   "five_c": "Cross-cutting",
+   "process_area": null,
+   "competency": null,
+   "form": [],
+   "hs_catalog_name": null,
+   "tiers": {
+    "advanced": {
+     "hours_low": 15,
+     "hours_high": 25,
+     "includes": [
+      "3+ workstreams"
+     ]
+    },
+    "essential": {
+     "hours_low": 5,
+     "hours_high": 10,
+     "includes": [
+      "Standard kickoff and onboarding portal",
+      "Up to 3 reverse-demo walkthroughs of current processes (run in Current-State Assessment instead when it is sold)"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 15,
+     "includes": [
+      "Everything in Essential",
+      "Several stakeholder groups or locations",
+      "2 simultaneous workstreams"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "project-management",
+   "name": "Project Management",
+   "family": "Engagement",
+   "five_c": "Cross-cutting",
+   "process_area": null,
+   "competency": null,
+   "form": [
+    "F",
+    "O",
+    "R",
+    "M"
+   ],
+   "hs_catalog_name": null,
+   "tiers": {},
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "cpq-quote-implementation",
+   "name": "CPQ & Quoting",
+   "family": "Implement",
+   "five_c": "Convert",
+   "process_area": "CPQ",
+   "competency": "Quote generation & approval",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "CPQ (Configure, Price, Quote) Implementation",
+   "tiers": {
+    "advanced": {
+     "hours_low": 40,
+     "hours_high": 100,
+     "includes": [
+      "Everything in Standard",
+      "Long-form contract handling (attachments, PO and insurance tracking)",
+      "Third-party CPQ or complex product rules"
+     ]
+    },
+    "essential": {
+     "hours_low": 12,
+     "hours_high": 20,
+     "includes": [
+      "1 new business quote template",
+      "Standard approval",
+      "E-signature and contract terms",
+      "Up to 3 discovery sessions",
+      "Up to 2 training sessions",
+      "Up to 8 hours of post-go-live support"
+     ]
+    },
+    "standard": {
+     "hours_low": 20,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Essential",
+      "Templates by segment",
+      "Discount approval workflow",
+      "Line item customizations (up to 5)"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "core-crm-configuration",
+   "name": "CRM Configuration",
+   "family": "Implement",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Core CRM Configuration",
+   "tiers": {
+    "advanced": {
+     "hours_low": 18,
+     "hours_high": 32,
+     "includes": [
+      "Everything in Standard",
+      "Multiple business units or brands in one portal",
+      "More than 20 properties per object or custom objects"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 10,
+     "includes": [
+      "Portal settings and standard objects",
+      "Properties for Contact and Company (up to 20 per object)",
+      "Portal-wide teams and permissions (up to 5 teams)",
+      "Email and calendar connected for all users",
+      "Up to 5 permission sets"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 18,
+     "includes": [
+      "Everything in Essential",
+      "Required fields and validation rules",
+      "Record views by team",
+      "Required and validated fields (up to 10 across objects)"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "campaign-and-conversion-infrastructure",
+   "name": "Campaigns, Nurture & Events",
+   "family": "Implement",
+   "five_c": "Capture",
+   "process_area": "Demand Capture",
+   "competency": "Marketing campaign management",
+   "form": [
+    "F",
+    "O"
+   ],
+   "hs_catalog_name": "Campaign & Conversion Infrastructure",
+   "tiers": {
+    "advanced": {
+     "hours_low": 28,
+     "hours_high": 55,
+     "includes": [
+      "Everything in Standard",
+      "Multi-touch nurture programs",
+      "Campaign hierarchy across products or regions"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 14,
+     "includes": [
+      "Campaign structure and naming convention",
+      "UTM standard",
+      "Up to 5 conversion events and 10 core segments",
+      "1 standard campaign hierarchy"
+     ]
+    },
+    "standard": {
+     "hours_low": 14,
+     "hours_high": 28,
+     "includes": [
+      "Everything in Essential",
+      "Up to 2 nurture workflows",
+      "Campaign templates and Marketing Events",
+      "Engagement and intent alerts to BDRs (up to 5 workflows)",
+      "A re-engagement or recycle nurture",
+      "Social account publishing setup"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "custom-crm-cards",
+   "name": "Custom CRM Cards",
+   "family": "Implement",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F",
+    "O"
+   ],
+   "hs_catalog_name": "Custom Code & Programmable Automation Development",
+   "tiers": {
+    "advanced": {
+     "hours_low": 16,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "UI extension cards with external data or actions (developer estimate)"
+     ]
+    },
+    "essential": {
+     "hours_low": 4,
+     "hours_high": 8,
+     "includes": [
+      "No-code card showing HubSpot data"
+     ]
+    },
+    "standard": {
+     "hours_low": 8,
+     "hours_high": 16,
+     "includes": [
+      "Everything in Essential",
+      "Several cards across teams"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "customer-health-score",
+   "name": "Customer Health Scoring",
+   "family": "Implement",
+   "five_c": "Cultivate",
+   "process_area": "Client Experience",
+   "competency": "Health scoring",
+   "form": [
+    "O",
+    "R"
+   ],
+   "hs_catalog_name": "Customer Success Workspace Setup; Customer Success Workflows",
+   "tiers": {
+    "advanced": {
+     "hours_low": 35,
+     "hours_high": 55,
+     "includes": [
+      "Everything in Standard",
+      "Automated inputs from product usage or other systems"
+     ]
+    },
+    "essential": {
+     "hours_low": 15,
+     "hours_high": 25,
+     "includes": [
+      "Health score model with a few inputs",
+      "Monthly scoring process"
+     ]
+    },
+    "standard": {
+     "hours_low": 25,
+     "hours_high": 35,
+     "includes": [
+      "Everything in Essential",
+      "Health score dashboards (up to 10 reports and 3 views)",
+      "Sub-scores and owner commentary"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "customer-onboarding",
+   "name": "Customer Onboarding",
+   "family": "Implement",
+   "five_c": "Cultivate",
+   "process_area": "Service Delivery",
+   "competency": "Onboarding execution",
+   "form": [
+    "F",
+    "O"
+   ],
+   "hs_catalog_name": "Customer Success Workflows",
+   "tiers": {
+    "advanced": {
+     "hours_low": 35,
+     "hours_high": 55,
+     "includes": [
+      "Everything in Standard",
+      "Several onboarding processes by product or segment",
+      "Custom onboarding object",
+      "Onboarding data synced from another tool, such as a support platform"
+     ]
+    },
+    "essential": {
+     "hours_low": 12,
+     "hours_high": 22,
+     "includes": [
+      "Onboarding pipeline with stages and required fields",
+      "Handoff from closed-won into onboarding",
+      "1 onboarding dashboard"
+     ]
+    },
+    "standard": {
+     "hours_low": 22,
+     "hours_high": 35,
+     "includes": [
+      "Everything in Essential",
+      "Onboarding tasks and templates by stage",
+      "Automated handoff and customer success owner assignment",
+      "Time-in-stage and stalled-onboarding alerts"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "customer-portal-self-service",
+   "name": "Customer Portal",
+   "family": "Implement",
+   "five_c": "Cultivate",
+   "process_area": "Customer Support",
+   "competency": "Knowledge base & chat",
+   "form": [
+    "O",
+    "M"
+   ],
+   "hs_catalog_name": "Customer Portal & Self-Service Experience",
+   "tiers": {
+    "advanced": {
+     "hours_low": 20,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Self-service actions such as renewal requests"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 10,
+     "includes": [
+      "Ticket visibility for customers"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 20,
+     "includes": [
+      "Everything in Essential",
+      "Additional records and properties visible to customers"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "data-migration",
+   "name": "Data Migration",
+   "family": "Implement",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Data Migration & Cleanup",
+   "tiers": {
+    "advanced": {
+     "hours_low": 22,
+     "hours_high": 60,
+     "includes": [
+      "Everything in Standard",
+      "Custom objects",
+      "Historical activity",
+      "Messy source system or staged cutover"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 10,
+     "includes": [
+      "Process Pro provides import templates; the client fills them",
+      "Standard objects only",
+      "Lists-only exit from another marketing platform: lists plus opt-in and opt-out statuses",
+      "1 supported import per object",
+      "Validation summary"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 22,
+     "includes": [
+      "Everything in Essential",
+      "Process Pro prepares import files",
+      "3 or more objects with associations"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "sales-goals-and-forecast-tool-setup",
+   "name": "Forecasting & Goals",
+   "family": "Implement",
+   "five_c": "Convert",
+   "process_area": "Pipeline Management",
+   "competency": "Pipeline Forecasting",
+   "form": [
+    "O",
+    "R"
+   ],
+   "hs_catalog_name": "Sales Hub Implementation",
+   "tiers": {
+    "advanced": {
+     "hours_low": 20,
+     "hours_high": 45,
+     "includes": [
+      "Everything in Standard",
+      "Custom revenue forecasting model (for example a monthly metrics custom object)"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 10,
+     "includes": [
+      "Forecast categories and submission rules",
+      "Goals and quotas for one team"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 20,
+     "includes": [
+      "Everything in Essential",
+      "Goals and quotas for several teams",
+      "Forecast fields and deal data setup"
+     ]
+    }
+   },
+   "module_hours_low": 15,
+   "module_hours_high": 30
+  },
+  {
+   "module_id": "knowledge-base-implementation",
+   "name": "Knowledge Base",
+   "family": "Implement",
+   "five_c": "Cultivate",
+   "process_area": "Customer Support",
+   "competency": "Knowledge base & chat",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Knowledge Base Implementation",
+   "tiers": {
+    "advanced": {
+     "hours_low": 22,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Multiple knowledge bases or languages"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Knowledge base setup and categories",
+      "Initial articles for top questions"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 22,
+     "includes": [
+      "Everything in Essential",
+      "Migration of existing articles",
+      "Article review process"
+     ]
+    }
+   },
+   "module_hours_low": 10,
+   "module_hours_high": 20
+  },
+  {
+   "module_id": "lead-and-lifecycle-management",
+   "name": "Lead Management",
+   "family": "Implement",
+   "five_c": "Capture",
+   "process_area": "Demand Capture",
+   "competency": "Lead capture, routing & scoring",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Lifecycle Automation & Lead Management",
+   "tiers": {
+    "advanced": {
+     "hours_low": 45,
+     "hours_high": 70,
+     "includes": [
+      "Everything in Standard",
+      "HubSpot Lead object with lead pipeline stages",
+      "Multiple scoring models or routing across business units or regions",
+      "SLA and speed-to-lead tracking: time to first touch, aging alerts on unworked leads, and SLA reporting",
+      "BDR and AE dual ownership, and ownership by named-account tier",
+      "A non-fit account list kept out of all automation"
+     ]
+    },
+    "essential": {
+     "hours_low": 15,
+     "hours_high": 30,
+     "includes": [
+      "Lead statuses and dispositions",
+      "Company, contact, and lead ownership rules",
+      "Ownership cleanup, including records owned by deactivated users",
+      "Lead status and disposition reporting",
+      "Process Pro Lead Management Process Map",
+      "Owner-entered or form-based intake, no scoring or recycling"
+     ]
+    },
+    "standard": {
+     "hours_low": 30,
+     "hours_high": 45,
+     "includes": [
+      "Everything in Essential",
+      "Lead scoring (1 model, up to 30 criteria)",
+      "Routing rules and up to 2 handoff workflows",
+      "Lead recycling (1 workflow)",
+      "Lead source and attribution model (single or multi-touch source, populated across contacts, companies, and deals)",
+      "For sales-led or outbound teams: BDR dispositions and timed re-engagement (for example 3, 6, and 9 months)"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "lifecycle-configuration",
+   "name": "Lifecycle Configuration",
+   "family": "Implement",
+   "five_c": "Capture",
+   "process_area": "Lead Handoff to Sales",
+   "competency": "Lead qualification & response",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Lifecycle Automation & Lead Management",
+   "tiers": {
+    "advanced": {
+     "hours_low": 26,
+     "hours_high": 50,
+     "includes": [
+      "Everything in Standard",
+      "Custom lifecycle stages: fully custom lifecycle properties (for example by product line or business unit)",
+      "Mapping the custom properties back to the standard Lifecycle Stage property so native reporting and automation keep working",
+      "Evaluating a custom lifecycle property against the native one, and deciding whether to migrate",
+      "Guardrails where external systems (for example product data or reverse ETL) write lifecycle inputs"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Confirm or adjust the standard lifecycle stages",
+      "Deal-driven stage progression",
+      "MQL criteria and MQL automation",
+      "Light lifecycle reporting",
+      "Lifecycle stages on 1 property"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 26,
+     "includes": [
+      "Everything in Essential",
+      "Migrating or updating existing records to the new or adjusted stages",
+      "Conversion reporting, including MQL to Opportunity"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "marketing-automation-platform-migration",
+   "name": "Marketing Asset Migration",
+   "family": "Implement",
+   "five_c": "Capture",
+   "process_area": "Demand Capture",
+   "competency": "Marketing campaign management",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Core Marketing Infrastructure Setup",
+   "tiers": {
+    "advanced": {
+     "hours_low": 110,
+     "hours_high": 200,
+     "includes": [
+      "Everything in Standard",
+      "Large asset set or complex automation"
+     ]
+    },
+    "essential": {
+     "hours_low": 30,
+     "hours_high": 50,
+     "includes": [
+      "Rebuild a small asset set (set in discovery)",
+      "2 training sessions"
+     ]
+    },
+    "standard": {
+     "hours_low": 50,
+     "hours_high": 110,
+     "includes": [
+      "Everything in Essential",
+      "Medium asset set including workflows"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "core-marketing-hub-setup",
+   "name": "Marketing Hub Setup",
+   "family": "Implement",
+   "five_c": "Capture",
+   "process_area": "Demand Capture",
+   "competency": "Marketing campaign management",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Core Marketing Infrastructure Setup",
+   "tiers": {
+    "advanced": {
+     "hours_low": 50,
+     "hours_high": 75,
+     "includes": [
+      "Everything in Standard",
+      "Multiple brands or domains",
+      "Multi-language templates"
+     ]
+    },
+    "essential": {
+     "hours_low": 24,
+     "hours_high": 36,
+     "includes": [
+      "Sending domain and tracking code (1 domain)",
+      "Email authentication (SPF, DKIM, DMARC)",
+      "Brand Kit",
+      "Email footer and CAN-SPAM settings",
+      "Cookie consent banner",
+      "GA4 connection",
+      "Social and ad account connection",
+      "Marketing contact status rules",
+      "Subscription types and preference center",
+      "Up to 3 email templates, 3 landing page templates, 5 forms",
+      "Up to 5 subscription types",
+      "Up to 10 core segments",
+      "2 training sessions"
+     ]
+    },
+    "standard": {
+     "hours_low": 36,
+     "hours_high": 50,
+     "includes": [
+      "Everything in Essential",
+      "More templates and forms",
+      "Asset naming and folder governance"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "platform-cutover-and-decommission",
+   "name": "Platform Cutover & Decommission",
+   "family": "Implement",
+   "five_c": "Cross-cutting",
+   "process_area": null,
+   "competency": null,
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": null,
+   "tiers": {
+    "advanced": {
+     "hours_low": 24,
+     "hours_high": 45,
+     "includes": [
+      "Everything in Standard",
+      "Several systems or business units cutting over",
+      "Phased cutover"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Single system cutover with a short freeze window"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 24,
+     "includes": [
+      "Everything in Essential",
+      "Marketing switches (sending domain, tracking code, forms, redirects)",
+      "Parallel-run period"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "portal-customization",
+   "name": "Portal Customization",
+   "family": "Implement",
+   "five_c": "Cross-cutting",
+   "process_area": null,
+   "competency": null,
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Custom Code & Programmable Automation Development",
+   "tiers": {},
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "gdpr-and-data-privacy-setup",
+   "name": "Privacy & Compliance",
+   "family": "Implement",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "Data quality & governance",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Compliance, Security & Governance",
+   "tiers": {
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 10,
+     "includes": [
+      "Data subject requests",
+      "Retention rules",
+      "Consent capture on any forms",
+      "Privacy review of connected tools"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 18,
+     "includes": [
+      "Everything in Essential",
+      "Consent rules on Marketing Hub subscription types",
+      "Double opt-in by country",
+      "Updating existing consent statuses",
+      "HubSpot sensitive data settings for regulated industries such as healthcare: sensitive data properties, redaction, and access controls"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "product-library-design",
+   "name": "Product Library & Pricing",
+   "family": "Implement",
+   "five_c": "Convert",
+   "process_area": "CPQ",
+   "competency": "Product Library & Price Books",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Product Library & Pricing Architecture",
+   "tiers": {
+    "advanced": {
+     "hours_low": 22,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Price books by region, currency, or segment",
+      "Complex pricing logic"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Product library with SKUs and properties",
+      "Simple pricing"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 22,
+     "includes": [
+      "Everything in Essential",
+      "Bundles",
+      "Discount rules and approval thresholds"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "quote-to-cash-build-sprint",
+   "name": "Quote-to-Cash & Subscriptions",
+   "family": "Implement",
+   "five_c": "Convert",
+   "process_area": "Convert-to-Close Handoff",
+   "competency": "Order-to-system flow",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Revenue Automation & Quote-to-Cash Workflows; Subscription & Recurring Revenue Setup",
+   "tiers": {
+    "advanced": {
+     "hours_low": 60,
+     "hours_high": 125,
+     "includes": [
+      "Everything in Standard",
+      "Third-party subscription tool evaluation and setup",
+      "Multi-step fulfillment automation built in sprints"
+     ]
+    },
+    "essential": {
+     "hours_low": 20,
+     "hours_high": 35,
+     "includes": [
+      "Closed-won to fulfillment process map",
+      "Basic post-sale handoff automation"
+     ]
+    },
+    "standard": {
+     "hours_low": 35,
+     "hours_high": 60,
+     "includes": [
+      "Everything in Essential",
+      "Subscription setup in HubSpot",
+      "Contract and subscription routing after close",
+      "HubSpot Contracts object with revenue ramp schedules: monthly ramp amounts, planned recurring revenue, and next 12 months billables"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "renewals-management",
+   "name": "Renewal Management",
+   "family": "Implement",
+   "five_c": "Cultivate",
+   "process_area": "Retention & Growth",
+   "competency": "Renewals",
+   "form": [
+    "F",
+    "O"
+   ],
+   "hs_catalog_name": "Subscription & Recurring Revenue Setup",
+   "tiers": {
+    "advanced": {
+     "hours_low": 28,
+     "hours_high": 48,
+     "includes": [
+      "Everything in Standard",
+      "Multi-year or co-termed renewals",
+      "Billing system involved in renewals"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Renewal reminders and tasks"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 28,
+     "includes": [
+      "Everything in Essential",
+      "Renewal pipeline and automated renewal deals",
+      "Renewal quote template",
+      "Renewal and churn reporting"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "sales-pipeline-reporting-and-dashboards",
+   "name": "Sales & Revenue Reporting",
+   "family": "Implement",
+   "five_c": "Core",
+   "process_area": "Revenue Intelligence",
+   "competency": "Reporting & dashboards",
+   "form": [
+    "F",
+    "O",
+    "R"
+   ],
+   "hs_catalog_name": "Sales Reporting & Dashboards",
+   "tiers": {
+    "advanced": {
+     "hours_low": 20,
+     "hours_high": 32,
+     "includes": [
+      "Everything in Standard",
+      "Executive and cross-functional dashboards",
+      "Custom report builder or datasets"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 10,
+     "includes": [
+      "One combined small-team dashboard: pipeline, goals, and forecast"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 20,
+     "includes": [
+      "Everything in Essential",
+      "Up to 3 dashboards (pipeline, forecast, activity)",
+      "Weekly summary reporting",
+      "10 reports per dashboard"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "ai-sales-workflow-automation",
+   "name": "Sales AI Agents",
+   "family": "Implement",
+   "five_c": "Convert",
+   "process_area": "Pipeline Management",
+   "competency": "Sales methodology",
+   "form": [
+    "O",
+    "M"
+   ],
+   "hs_catalog_name": "Prospecting Agent Configuration & Deployment; AI GTM Workflow Automation Implementation",
+   "tiers": {
+    "advanced": {
+     "hours_low": 30,
+     "hours_high": 55,
+     "includes": [
+      "Everything in Standard",
+      "Custom data sources and Slack or other channels",
+      "Slack lead alerts with AI-summarized lead and deal signals",
+      "Pilot across several teams"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 14,
+     "includes": [
+      "One agent (for example the prospecting agent)"
+     ]
+    },
+    "standard": {
+     "hours_low": 14,
+     "hours_high": 30,
+     "includes": [
+      "Everything in Essential",
+      "Prospecting plus rep follow-up and deal advancement agents"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "sequences-templates-and-playbooks",
+   "name": "Sales Enablement",
+   "family": "Implement",
+   "five_c": "Convert",
+   "process_area": "Pipeline Management",
+   "competency": "Sales methodology",
+   "form": [
+    "O",
+    "M"
+   ],
+   "hs_catalog_name": "Sequences, Templates, Documents, Playbooks & Snippets Setup",
+   "tiers": {
+    "advanced": {
+     "hours_low": 20,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Sequences for several segments or motions",
+      "Sequences run in a connected tool such as Apollo"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 10,
+     "includes": [
+      "Up to 5 sequences and 5 email templates",
+      "Snippet library",
+      "Up to 10 steps per sequence",
+      "Up to 10 snippets"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 20,
+     "includes": [
+      "Everything in Essential",
+      "Meeting links and document library",
+      "Sequence reporting",
+      "Sales playbook",
+      "1 standard sequence report"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "sales-hub-setup-pipeline-and-activity",
+   "name": "Sales Hub Setup",
+   "family": "Implement",
+   "five_c": "Convert",
+   "process_area": "Pipeline Management",
+   "competency": "Sales methodology",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Sales Hub Implementation",
+   "tiers": {
+    "advanced": {
+     "hours_low": 18,
+     "hours_high": 32,
+     "includes": [
+      "Everything in Standard",
+      "Several sales teams or regions with different processes"
+     ]
+    },
+    "essential": {
+     "hours_low": 4,
+     "hours_high": 8,
+     "includes": [
+      "Sales teams and sales-specific permissions",
+      "Activity logging standards"
+     ]
+    },
+    "standard": {
+     "hours_low": 8,
+     "hours_high": 18,
+     "includes": [
+      "Everything in Essential",
+      "Activity and prospecting views for reps and managers",
+      "Shared inbox"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "sales-pipeline-design-and-build",
+   "name": "Sales Pipeline Setup & Management",
+   "family": "Implement",
+   "five_c": "Convert",
+   "process_area": "Pipeline Management",
+   "competency": "Pipeline Architecture",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Sales Hub Implementation",
+   "tiers": {
+    "advanced": {
+     "hours_low": 26,
+     "hours_high": 36,
+     "includes": [
+      "Everything in Standard",
+      "4+ Pipelines (for example new business and partner)",
+      "Stage gates with complex required data"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 12,
+     "includes": [
+      "1 Deal pipeline, up to 7 stages",
+      "Required properties per stage",
+      "Deal record views"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 26,
+     "includes": [
+      "Everything in Essential",
+      "3 Deal pipeline, up to 7 stages",
+      "Pipeline task automations (up to 5)",
+      "Deal routing and owner assignment",
+      "Migrating existing deals into the new pipeline",
+      "Starter pipeline dashboard (up to 10 reports)"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "customer-agent-and-knowledge-base-setup",
+   "name": "Service AI Agents",
+   "family": "Implement",
+   "five_c": "Cultivate",
+   "process_area": "Customer Support",
+   "competency": "Knowledge base & chat",
+   "form": [
+    "O",
+    "M"
+   ],
+   "hs_catalog_name": "Customer Agent Configuration & Deployment",
+   "tiers": {
+    "advanced": {
+     "hours_low": 22,
+     "hours_high": 35,
+     "includes": [
+      "Everything in Standard",
+      "Handoff rules across several support teams",
+      "Multiple languages"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Customer agent on one channel",
+      "Existing knowledge base articles"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 22,
+     "includes": [
+      "Everything in Essential",
+      "Several channels",
+      "Additional training sources (website, documents)"
+     ]
+    }
+   },
+   "module_hours_low": 10,
+   "module_hours_high": 30
+  },
+  {
+   "module_id": "help-desk-and-workspace-setup",
+   "name": "Service Hub Setup",
+   "family": "Implement",
+   "five_c": "Cultivate",
+   "process_area": "Service Delivery",
+   "competency": "Systems & tooling",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Help Desk Implementation & Workspace Setup",
+   "tiers": {
+    "advanced": {
+     "hours_low": 12,
+     "hours_high": 20,
+     "includes": [
+      "Everything in Standard",
+      "Several regions or brands with separate channels"
+     ]
+    },
+    "essential": {
+     "hours_low": 4,
+     "hours_high": 8,
+     "includes": [
+      "Support teams and permissions",
+      "Up to 3 inboxes or channels",
+      "Business hours",
+      "Up to 3 support teams"
+     ]
+    },
+    "standard": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Everything in Essential",
+      "Chat and calling channels",
+      "After-hours handling"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "subscription-amendments",
+   "name": "Subscription Amendments",
+   "family": "Implement",
+   "five_c": "Cultivate",
+   "process_area": "Retention & Growth",
+   "competency": "Amendment",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Subscription & Recurring Revenue Setup",
+   "tiers": {
+    "advanced": {
+     "hours_low": 24,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Proration and co-terming",
+      "Billing system updates"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Upgrades and add-ons",
+      "Change quote template"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 24,
+     "includes": [
+      "Everything in Essential",
+      "Downgrades, quantity changes, and cancellations",
+      "Finance notifications"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "service-hub-setup-help-desk-tickets-routing-slas",
+   "name": "Tickets & Help Desk",
+   "family": "Implement",
+   "five_c": "Cultivate",
+   "process_area": "Customer Support",
+   "competency": "Ticketing, SLA & response",
+   "form": [
+    "F",
+    "O"
+   ],
+   "hs_catalog_name": "Help Desk Implementation & Workspace Setup; Ticketing System & Pipeline Configuration; Routing, SLAs & Operational Automation; Service Reporting & Dashboards",
+   "tiers": {
+    "advanced": {
+     "hours_low": 40,
+     "hours_high": 70,
+     "includes": [
+      "Everything in Standard",
+      "Several support tiers or regions",
+      "Sensitive data features"
+     ]
+    },
+    "essential": {
+     "hours_low": 12,
+     "hours_high": 20,
+     "includes": [
+      "1 ticket pipeline",
+      "Help desk workspace and agent views",
+      "Basic routing",
+      "2 training sessions"
+     ]
+    },
+    "standard": {
+     "hours_low": 20,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Essential",
+      "Up to 2 ticket pipelines",
+      "SLAs by ticket type",
+      "Service reporting"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "custom-integration-api-workflow",
+   "name": "Custom API Integration",
+   "family": "Integrate",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Custom Code & Programmable Automation Development",
+   "tiers": {
+    "advanced": {
+     "hours_low": 35,
+     "hours_high": 60,
+     "includes": [
+      "Everything in Standard",
+      "Custom workflow actions or code",
+      "High volume or complex error handling",
+      "Partner-built integration coordination"
+     ]
+    },
+    "essential": {
+     "hours_low": 14,
+     "hours_high": 20,
+     "includes": [
+      "One-way API or webhook integration, one object"
+     ]
+    },
+    "standard": {
+     "hours_low": 20,
+     "hours_high": 35,
+     "includes": [
+      "Everything in Essential",
+      "Two-way sync",
+      "Several objects"
+     ]
+    }
+   },
+   "module_hours_low": 20,
+   "module_hours_high": 40
+  },
+  {
+   "module_id": "accounting-erp-integration",
+   "name": "ERP & Accounting Integration",
+   "family": "Integrate",
+   "five_c": "Close",
+   "process_area": "Revenue & Finance Operations",
+   "competency": "Billing & invoicing",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Integrations & Financial Systems Alignment",
+   "tiers": {
+    "advanced": {
+     "hours_low": 50,
+     "hours_high": 100,
+     "includes": [
+      "Everything in Standard",
+      "Several entities or currencies",
+      "Custom middleware or ERP customizations"
+     ]
+    },
+    "essential": {
+     "hours_low": 14,
+     "hours_high": 22,
+     "includes": [
+      "One-way sync from HubSpot at Closed Won"
+     ]
+    },
+    "standard": {
+     "hours_low": 22,
+     "hours_high": 50,
+     "includes": [
+      "Everything in Essential",
+      "Business process maps",
+      "Two-way updates such as invoice and payment status"
+     ]
+    }
+   },
+   "module_hours_low": 50,
+   "module_hours_high": 100
+  },
+  {
+   "module_id": "custom-integration-zapier-middleware",
+   "name": "No-Code Integration",
+   "family": "Integrate",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Data Sync & Integration Management",
+   "tiers": {
+    "advanced": {
+     "hours_low": 30,
+     "hours_high": 60,
+     "includes": [
+      "Everything in Standard",
+      "Multiple objects and associations",
+      "Transformations",
+      "Historical backfill"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 15,
+     "includes": [
+      "Up to 2 one-way flows, 5 to 10 properties each"
+     ]
+    },
+    "standard": {
+     "hours_low": 15,
+     "hours_high": 30,
+     "includes": [
+      "Everything in Essential",
+      "Two-way sync with conflict rules",
+      "Error alerts"
+     ]
+    }
+   },
+   "module_hours_low": 15,
+   "module_hours_high": 25
+  },
+  {
+   "module_id": "product-usage-data",
+   "name": "Product Usage Data",
+   "family": "Integrate",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F",
+    "O"
+   ],
+   "hs_catalog_name": "—",
+   "tiers": {
+    "advanced": {
+     "hours_low": 30,
+     "hours_high": 50,
+     "includes": [
+      "Everything in Standard",
+      "Warehouse or Data Hub sources (for example SQL or Snowflake)",
+      "Several products",
+      "Usage inputs to health scoring",
+      "Historical backfill"
+     ]
+    },
+    "essential": {
+     "hours_low": 10,
+     "hours_high": 16,
+     "includes": [
+      "Sign-up or trial event creates records in HubSpot",
+      "Up to 10 usage properties",
+      "Basic usage report"
+     ]
+    },
+    "standard": {
+     "hours_low": 16,
+     "hours_high": 30,
+     "includes": [
+      "Everything in Essential",
+      "Product account or workspace object with associations",
+      "Custom events schema (up to about 10 events)",
+      "PQL criteria, usage-based lists, and alerts"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "salesforce-campaign-alignment",
+   "name": "Salesforce Campaign Alignment",
+   "family": "Integrate",
+   "five_c": "Capture",
+   "process_area": "Demand Capture",
+   "competency": "Marketing data, attribution & source reporting",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "Campaign & Conversion Infrastructure",
+   "tiers": {
+    "advanced": {
+     "hours_low": 22,
+     "hours_high": 36,
+     "includes": [
+      "Everything in Standard",
+      "Complex Salesforce parent campaign hierarchy"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Governance only, with no sync configured: audit the Salesforce campaign hierarchy, set naming and required fields, and write a campaign creation checklist and operating procedure",
+      "Campaign member statuses"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 22,
+     "includes": [
+      "Everything in Essential",
+      "Campaign sync",
+      "Campaign influence on opportunities"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "salesforce-integration-setup",
+   "name": "Salesforce Integration",
+   "family": "Integrate",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": null,
+   "tiers": {
+    "advanced": {
+     "hours_low": 40,
+     "hours_high": 60,
+     "includes": [
+      "Everything in Standard",
+      "Custom objects",
+      "Complex Salesforce setup (several orgs or record types)"
+     ]
+    },
+    "essential": {
+     "hours_low": 15,
+     "hours_high": 22,
+     "includes": [
+      "Standard objects syncing one way or selectively"
+     ]
+    },
+    "standard": {
+     "hours_low": 22,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Essential",
+      "Two-way sync with field ownership rules",
+      "Duplicate and orphan cleanup",
+      "Stabilizing an existing connector: audit the current setup, diagnose duplicate and orphan records, validate account matching, and align lifecycle and status mapping"
+     ]
+    }
+   },
+   "module_hours_low": 20,
+   "module_hours_high": 60
+  },
+  {
+   "module_id": "third-party-native-integration-setup",
+   "name": "Third-Party App Integrations",
+   "family": "Integrate",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": null,
+   "tiers": {
+    "advanced": {
+     "hours_low": 25,
+     "hours_high": 45,
+     "includes": [
+      "Everything in Standard",
+      "Telephony across many countries",
+      "Several apps working together"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 9,
+     "includes": [
+      "Install and sync settings for one native app"
+     ]
+    },
+    "standard": {
+     "hours_low": 9,
+     "hours_high": 25,
+     "includes": [
+      "Everything in Essential",
+      "Configured dialer, sales engagement, or messaging app (numbers, sequences, routing)"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "workflow-audit-and-cleanup",
+   "name": "Automation Audit & Optimization",
+   "family": "Optimize",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "R",
+    "M"
+   ],
+   "hs_catalog_name": "Workflow & Automation Optimization",
+   "tiers": {
+    "advanced": {
+     "hours_low": 28,
+     "hours_high": 48,
+     "includes": [
+      "Everything in Standard",
+      "Large automation estates",
+      "Agent automation review: inventory, data access and guardrails, overlap with workflows, and retuning or retiring agents"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "Workflow inventory and prioritization"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 28,
+     "includes": [
+      "Everything in Essential",
+      "Up to 3 routing, 5 task, and 3 data hygiene workflow improvements",
+      "Operating rules"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "data-cleanup-and-deduplication",
+   "name": "Data Cleanup & Quality",
+   "family": "Optimize",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "Data quality & governance",
+   "form": [
+    "F",
+    "O"
+   ],
+   "hs_catalog_name": "Data Quality & Hygiene Automation Setup",
+   "tiers": {
+    "advanced": {
+     "hours_low": 20,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Third-party dedup tools or Data Hub",
+      "Cleaning source data before a migration"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 10,
+     "includes": [
+      "Assessment only, with no execution: duplicate impact assessment, Data Hub or deduplication tool recommendation, and a remediation plan"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 20,
+     "includes": [
+      "Everything in Essential",
+      "Duplicate merge rules and deduplication of contacts and companies",
+      "Suppression and do-not-contact lists",
+      "A bad-data loop: reps flag bad records, which are suppressed or re-verified",
+      "Controls to stop bad data at the source",
+      "Exception reports and a monthly review"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "data-enrichment",
+   "name": "Data Enrichment",
+   "family": "Optimize",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "HubSpot architecture, data model, integrations & enrichment",
+   "form": [
+    "R",
+    "M"
+   ],
+   "hs_catalog_name": "Data Enrichment Implementation; Intent Data Integration & Operationalization",
+   "tiers": {
+    "advanced": {
+     "hours_low": 24,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Intent signals (up to 5)",
+      "Automated intent ingestion, replacing manual imports",
+      "Enrichment workflows built in the client's data provider (tables, waterfall lookups, verification, credit efficiency)",
+      "Coaching for the client's team on running the data provider workflows"
+     ]
+    },
+    "essential": {
+     "hours_low": 8,
+     "hours_high": 12,
+     "includes": [
+      "One enrichment source",
+      "Priority fields"
+     ]
+    },
+    "standard": {
+     "hours_low": 12,
+     "hours_high": 24,
+     "includes": [
+      "Everything in Essential",
+      "Up to 3 sources",
+      "Job-change alerts"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "property-audit-and-governance",
+   "name": "Property Audit & Governance",
+   "family": "Optimize",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "Data quality & governance",
+   "form": [
+    "F",
+    "O"
+   ],
+   "hs_catalog_name": "Data Governance & Change Control",
+   "tiers": {
+    "advanced": {
+     "hours_low": 24,
+     "hours_high": 40,
+     "includes": [
+      "Everything in Standard",
+      "Several hundred properties",
+      "Heavy downstream dependencies (reports, workflows, integrations)"
+     ]
+    },
+    "essential": {
+     "hours_low": 6,
+     "hours_high": 10,
+     "includes": [
+      "Property audit for one object"
+     ]
+    },
+    "standard": {
+     "hours_low": 10,
+     "hours_high": 24,
+     "includes": [
+      "Everything in Essential",
+      "All objects",
+      "Keep, consolidate, or delete decisions",
+      "Change request process"
+     ]
+    }
+   },
+   "module_hours_low": 10,
+   "module_hours_high": 40
+  },
+  {
+   "module_id": "teams-roles-and-permissions",
+   "name": "Roles, Teams & Permissions",
+   "family": "Optimize",
+   "five_c": "Core",
+   "process_area": "Systems & Data Governance",
+   "competency": "Data quality & governance",
+   "form": [
+    "F"
+   ],
+   "hs_catalog_name": "CRM Automation & Governance",
+   "tiers": {
+    "advanced": {
+     "hours_low": 16,
+     "hours_high": 24,
+     "includes": [
+      "Everything in Standard",
+      "Team hierarchy for reporting",
+      "Multiple business units"
+     ]
+    },
+    "essential": {
+     "hours_low": 4,
+     "hours_high": 8,
+     "includes": [
+      "Permission review",
+      "Up to 3 teams"
+     ]
+    },
+    "standard": {
+     "hours_low": 8,
+     "hours_high": 16,
+     "includes": [
+      "Everything in Essential",
+      "Target permission model",
+      "Up to 5 teams and 5 permission sets"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  },
+  {
+   "module_id": "managed-marketing-operations",
+   "name": "Managed Marketing Operations",
+   "family": "Support & enablement",
+   "five_c": "Capture",
+   "process_area": "Demand Capture",
+   "competency": "Marketing campaign management",
+   "form": [
+    "O"
+   ],
+   "hs_catalog_name": "Integrated Campaign Management",
+   "tiers": {
+    "advanced": {
+     "hours_low": 70,
+     "hours_high": 100,
+     "includes": [
+      "Everything in Standard",
+      "4 or more campaigns a month or several channels"
+     ]
+    },
+    "essential": {
+     "hours_low": 15,
+     "hours_high": 25,
+     "includes": [
+      "1 campaign a month"
+     ]
+    },
+    "standard": {
+     "hours_low": 35,
+     "hours_high": 60,
+     "includes": [
+      "Everything in Essential",
+      "2 to 3 campaigns a month"
+     ]
+    }
+   },
+   "module_hours_low": 15,
+   "module_hours_high": 25
+  },
+  {
+   "module_id": "ongoing-support-fractional-revops",
+   "name": "Ongoing RevOps Support",
+   "family": "Support & enablement",
+   "five_c": "Cross-cutting",
+   "process_area": null,
+   "competency": null,
+   "form": [
+    "O",
+    "R"
+   ],
+   "hs_catalog_name": "Core Admin & System Maintenance",
+   "tiers": {
+    "advanced": {
+     "hours_low": 60,
+     "hours_high": 80,
+     "includes": [
+      "Everything in Standard",
+      "60, 70, 80, or more hours a month",
+      "Fractional RevOps leadership",
+      "Large Projects from the backlog"
+     ]
+    },
+    "essential": {
+     "hours_low": 20,
+     "hours_high": 30,
+     "includes": [
+      "20, or 30 hours a month"
+     ]
+    },
+    "standard": {
+     "hours_low": 40,
+     "hours_high": 50,
+     "includes": [
+      "Everything in Essential",
+      "40, 50, or 60 hours a month",
+      "Small projects from the backlog"
+     ]
+    }
+   },
+   "module_hours_low": null,
+   "module_hours_high": null
+  }
+ ]
+}
