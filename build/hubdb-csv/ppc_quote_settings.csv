@@ -1,0 +1,2 @@
+hourly_rate,currency,pm_rounding,default_hours_basis
+225,USD,"nearest hour, halves up",midpoint

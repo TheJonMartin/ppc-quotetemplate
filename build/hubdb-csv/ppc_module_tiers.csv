@@ -1,0 +1,144 @@
+module_id,module_name,tier,hours_low,hours_high,hours_default,includes
+crm-migration-discovery,CRM Migration Discovery,essential,20,30,25,"One CRM, standard objects"
+crm-migration-discovery,CRM Migration Discovery,standard,30,60,45,"Everything in Essential · Custom objects, automations, and reports to inventory"
+crm-migration-discovery,CRM Migration Discovery,advanced,60,100,80,"Everything in Standard · Several business units, many integrations"
+hubspot-portal-audit-and-roadmap,Current-State Assessment,essential,5,15,10,Portal audit for one hub · Prioritized findings · Two 1-hour process walkthroughs
+hubspot-portal-audit-and-roadmap,Current-State Assessment,standard,15,25,20,Everything in Essential · Up to 2 process walkthroughs · Property fill-rate analysis · Sequenced roadmap
+hubspot-portal-audit-and-roadmap,Current-State Assessment,advanced,25,40,33,Everything in Standard · Several business units or portals · Integration and data flow audit
+marketing-migration-discovery,Marketing Migration Discovery,essential,10,16,13,Inventory of a small asset library
+marketing-migration-discovery,Marketing Migration Discovery,standard,16,28,22,Everything in Essential · Medium library with workflows
+marketing-migration-discovery,Marketing Migration Discovery,advanced,28,45,37,Everything in Standard · Large library or several business units
+customer-journey-mapping,Customer Journey Mapping,essential,12,18,15,"1 persona, first touch through renewal or retention · Up to 3 workshops · Journey map and touchpoint inventory · HubSpot requirements list"
+customer-journey-mapping,Customer Journey Mapping,standard,18,28,23,"Everything in Essential · Up to 3 personas, for example buyer and member or end user · Gap analysis between teams · Prioritized roadmap mapped to modules"
+customer-journey-mapping,Customer Journey Mapping,advanced,28,40,34,"Everything in Standard · Several segments, product lines, or regions · Customer interviews or survey input"
+gtm-process-and-tech-stack-design,GTM Process Design,essential,12,18,15,Up to 3 working sessions · Lifecycle and lead status definitions · Single go-to-market motion
+gtm-process-and-tech-stack-design,GTM Process Design,standard,18,28,23,Everything in Essential · ICP and segmentation model · Tech stack recommendation
+gtm-process-and-tech-stack-design,GTM Process Design,advanced,28,40,34,Everything in Standard · Several motions (for example product-led and sales-led) · Several segments or regions
+system-design-and-data-model,Solution Design & Data Architecture,essential,4,8,6,"Light design for a single team, folded into the build"
+system-design-and-data-model,Solution Design & Data Architecture,standard,8,24,16,"Everything in Essential · Full target data model · Field mapping from source systems · Up to 20 custom properties per object · Integration discovery: requirements workshops, system-of-record boundaries, sync direction, API and volume constraints, and a Phase 2 build plan"
+system-design-and-data-model,Solution Design & Data Architecture,advanced,24,50,37,Everything in Standard · Several business units · Complex associations or account hierarchy · Partner dependencies
+onboarding-and-project-kickoff,Client Onboarding & Kickoff,essential,5,10,8,Standard kickoff and onboarding portal · Up to 3 reverse-demo walkthroughs of current processes (run in Current-State Assessment instead when it is sold)
+onboarding-and-project-kickoff,Client Onboarding & Kickoff,standard,10,15,13,Everything in Essential · Several stakeholder groups or locations · 2 simultaneous workstreams
+onboarding-and-project-kickoff,Client Onboarding & Kickoff,advanced,15,25,20,3+ workstreams
+cpq-quote-implementation,CPQ & Quoting,essential,12,20,16,1 new business quote template · Standard approval · E-signature and contract terms · Up to 3 discovery sessions · Up to 2 training sessions · Up to 8 hours of post-go-live support
+cpq-quote-implementation,CPQ & Quoting,standard,20,40,30,Everything in Essential · Templates by segment · Discount approval workflow · Line item customizations (up to 5)
+cpq-quote-implementation,CPQ & Quoting,advanced,40,100,70,"Everything in Standard · Long-form contract handling (attachments, PO and insurance tracking) · Third-party CPQ or complex product rules"
+core-crm-configuration,CRM Configuration,essential,6,10,8,Portal settings and standard objects · Properties for Contact and Company (up to 20 per object) · Portal-wide teams and permissions (up to 5 teams) · Email and calendar connected for all users · Up to 5 permission sets
+core-crm-configuration,CRM Configuration,standard,10,18,14,Everything in Essential · Required fields and validation rules · Record views by team · Required and validated fields (up to 10 across objects)
+core-crm-configuration,CRM Configuration,advanced,18,32,25,Everything in Standard · Multiple business units or brands in one portal · More than 20 properties per object or custom objects
+campaign-and-conversion-infrastructure,"Campaigns, Nurture & Events",essential,8,14,11,Campaign structure and naming convention · UTM standard · Up to 5 conversion events and 10 core segments · 1 standard campaign hierarchy
+campaign-and-conversion-infrastructure,"Campaigns, Nurture & Events",standard,14,28,21,Everything in Essential · Up to 2 nurture workflows · Campaign templates and Marketing Events · Engagement and intent alerts to BDRs (up to 5 workflows) · A re-engagement or recycle nurture · Social account publishing setup
+campaign-and-conversion-infrastructure,"Campaigns, Nurture & Events",advanced,28,55,42,Everything in Standard · Multi-touch nurture programs · Campaign hierarchy across products or regions
+custom-crm-cards,Custom CRM Cards,essential,4,8,6,No-code card showing HubSpot data
+custom-crm-cards,Custom CRM Cards,standard,8,16,12,Everything in Essential · Several cards across teams
+custom-crm-cards,Custom CRM Cards,advanced,16,40,28,Everything in Standard · UI extension cards with external data or actions (developer estimate)
+customer-health-score,Customer Health Scoring,essential,15,25,20,Health score model with a few inputs · Monthly scoring process
+customer-health-score,Customer Health Scoring,standard,25,35,30,Everything in Essential · Health score dashboards (up to 10 reports and 3 views) · Sub-scores and owner commentary
+customer-health-score,Customer Health Scoring,advanced,35,55,45,Everything in Standard · Automated inputs from product usage or other systems
+customer-onboarding,Customer Onboarding,essential,12,22,17,Onboarding pipeline with stages and required fields · Handoff from closed-won into onboarding · 1 onboarding dashboard
+customer-onboarding,Customer Onboarding,standard,22,35,29,Everything in Essential · Onboarding tasks and templates by stage · Automated handoff and customer success owner assignment · Time-in-stage and stalled-onboarding alerts
+customer-onboarding,Customer Onboarding,advanced,35,55,45,"Everything in Standard · Several onboarding processes by product or segment · Custom onboarding object · Onboarding data synced from another tool, such as a support platform"
+customer-portal-self-service,Customer Portal,essential,6,10,8,Ticket visibility for customers
+customer-portal-self-service,Customer Portal,standard,10,20,15,Everything in Essential · Additional records and properties visible to customers
+customer-portal-self-service,Customer Portal,advanced,20,40,30,Everything in Standard · Self-service actions such as renewal requests
+data-migration,Data Migration,essential,6,10,8,Process Pro provides import templates; the client fills them · Standard objects only · Lists-only exit from another marketing platform: lists plus opt-in and opt-out statuses · 1 supported import per object · Validation summary
+data-migration,Data Migration,standard,10,22,16,Everything in Essential · Process Pro prepares import files · 3 or more objects with associations
+data-migration,Data Migration,advanced,22,60,41,Everything in Standard · Custom objects · Historical activity · Messy source system or staged cutover
+sales-goals-and-forecast-tool-setup,Forecasting & Goals,essential,6,10,8,Forecast categories and submission rules · Goals and quotas for one team
+sales-goals-and-forecast-tool-setup,Forecasting & Goals,standard,10,20,15,Everything in Essential · Goals and quotas for several teams · Forecast fields and deal data setup
+sales-goals-and-forecast-tool-setup,Forecasting & Goals,advanced,20,45,33,Everything in Standard · Custom revenue forecasting model (for example a monthly metrics custom object)
+knowledge-base-implementation,Knowledge Base,essential,8,12,10,Knowledge base setup and categories · Initial articles for top questions
+knowledge-base-implementation,Knowledge Base,standard,12,22,17,Everything in Essential · Migration of existing articles · Article review process
+knowledge-base-implementation,Knowledge Base,advanced,22,40,31,Everything in Standard · Multiple knowledge bases or languages
+lead-and-lifecycle-management,Lead Management,essential,15,30,23,"Lead statuses and dispositions · Company, contact, and lead ownership rules · Ownership cleanup, including records owned by deactivated users · Lead status and disposition reporting · Process Pro Lead Management Process Map · Owner-entered or form-based intake, no scoring or recycling"
+lead-and-lifecycle-management,Lead Management,standard,30,45,38,"Everything in Essential · Lead scoring (1 model, up to 30 criteria) · Routing rules and up to 2 handoff workflows · Lead recycling (1 workflow) · Lead source and attribution model (single or multi-touch source, populated across contacts, companies, and deals) · For sales-led or outbound teams: BDR dispositions and timed re-engagement (for example 3, 6, and 9 months)"
+lead-and-lifecycle-management,Lead Management,advanced,45,70,58,"Everything in Standard · HubSpot Lead object with lead pipeline stages · Multiple scoring models or routing across business units or regions · SLA and speed-to-lead tracking: time to first touch, aging alerts on unworked leads, and SLA reporting · BDR and AE dual ownership, and ownership by named-account tier · A non-fit account list kept out of all automation"
+lifecycle-configuration,Lifecycle Configuration,essential,8,12,10,Confirm or adjust the standard lifecycle stages · Deal-driven stage progression · MQL criteria and MQL automation · Light lifecycle reporting · Lifecycle stages on 1 property
+lifecycle-configuration,Lifecycle Configuration,standard,12,26,19,"Everything in Essential · Migrating or updating existing records to the new or adjusted stages · Conversion reporting, including MQL to Opportunity"
+lifecycle-configuration,Lifecycle Configuration,advanced,26,50,38,"Everything in Standard · Custom lifecycle stages: fully custom lifecycle properties (for example by product line or business unit) · Mapping the custom properties back to the standard Lifecycle Stage property so native reporting and automation keep working · Evaluating a custom lifecycle property against the native one, and deciding whether to migrate · Guardrails where external systems (for example product data or reverse ETL) write lifecycle inputs"
+marketing-automation-platform-migration,Marketing Asset Migration,essential,30,50,40,Rebuild a small asset set (set in discovery) · 2 training sessions
+marketing-automation-platform-migration,Marketing Asset Migration,standard,50,110,80,Everything in Essential · Medium asset set including workflows
+marketing-automation-platform-migration,Marketing Asset Migration,advanced,110,200,155,Everything in Standard · Large asset set or complex automation
+core-marketing-hub-setup,Marketing Hub Setup,essential,24,36,30,"Sending domain and tracking code (1 domain) · Email authentication (SPF, DKIM, DMARC) · Brand Kit · Email footer and CAN-SPAM settings · Cookie consent banner · GA4 connection · Social and ad account connection · Marketing contact status rules · Subscription types and preference center · Up to 3 email templates, 3 landing page templates, 5 forms · Up to 5 subscription types · Up to 10 core segments · 2 training sessions"
+core-marketing-hub-setup,Marketing Hub Setup,standard,36,50,43,Everything in Essential · More templates and forms · Asset naming and folder governance
+core-marketing-hub-setup,Marketing Hub Setup,advanced,50,75,63,Everything in Standard · Multiple brands or domains · Multi-language templates
+platform-cutover-and-decommission,Platform Cutover & Decommission,essential,8,12,10,Single system cutover with a short freeze window
+platform-cutover-and-decommission,Platform Cutover & Decommission,standard,12,24,18,"Everything in Essential · Marketing switches (sending domain, tracking code, forms, redirects) · Parallel-run period"
+platform-cutover-and-decommission,Platform Cutover & Decommission,advanced,24,45,35,Everything in Standard · Several systems or business units cutting over · Phased cutover
+gdpr-and-data-privacy-setup,Privacy & Compliance,essential,6,10,8,Data subject requests · Retention rules · Consent capture on any forms · Privacy review of connected tools
+gdpr-and-data-privacy-setup,Privacy & Compliance,standard,10,18,14,"Everything in Essential · Consent rules on Marketing Hub subscription types · Double opt-in by country · Updating existing consent statuses · HubSpot sensitive data settings for regulated industries such as healthcare: sensitive data properties, redaction, and access controls"
+product-library-design,Product Library & Pricing,essential,8,12,10,Product library with SKUs and properties · Simple pricing
+product-library-design,Product Library & Pricing,standard,12,22,17,Everything in Essential · Bundles · Discount rules and approval thresholds
+product-library-design,Product Library & Pricing,advanced,22,40,31,"Everything in Standard · Price books by region, currency, or segment · Complex pricing logic"
+quote-to-cash-build-sprint,Quote-to-Cash & Subscriptions,essential,20,35,28,Closed-won to fulfillment process map · Basic post-sale handoff automation
+quote-to-cash-build-sprint,Quote-to-Cash & Subscriptions,standard,35,60,48,"Everything in Essential · Subscription setup in HubSpot · Contract and subscription routing after close · HubSpot Contracts object with revenue ramp schedules: monthly ramp amounts, planned recurring revenue, and next 12 months billables"
+quote-to-cash-build-sprint,Quote-to-Cash & Subscriptions,advanced,60,125,93,Everything in Standard · Third-party subscription tool evaluation and setup · Multi-step fulfillment automation built in sprints
+renewals-management,Renewal Management,essential,8,12,10,Renewal reminders and tasks
+renewals-management,Renewal Management,standard,12,28,20,Everything in Essential · Renewal pipeline and automated renewal deals · Renewal quote template · Renewal and churn reporting
+renewals-management,Renewal Management,advanced,28,48,38,Everything in Standard · Multi-year or co-termed renewals · Billing system involved in renewals
+sales-pipeline-reporting-and-dashboards,Sales & Revenue Reporting,essential,6,10,8,"One combined small-team dashboard: pipeline, goals, and forecast"
+sales-pipeline-reporting-and-dashboards,Sales & Revenue Reporting,standard,10,20,15,"Everything in Essential · Up to 3 dashboards (pipeline, forecast, activity) · Weekly summary reporting · 10 reports per dashboard"
+sales-pipeline-reporting-and-dashboards,Sales & Revenue Reporting,advanced,20,32,26,Everything in Standard · Executive and cross-functional dashboards · Custom report builder or datasets
+ai-sales-workflow-automation,Sales AI Agents,essential,8,14,11,One agent (for example the prospecting agent)
+ai-sales-workflow-automation,Sales AI Agents,standard,14,30,22,Everything in Essential · Prospecting plus rep follow-up and deal advancement agents
+ai-sales-workflow-automation,Sales AI Agents,advanced,30,55,43,Everything in Standard · Custom data sources and Slack or other channels · Slack lead alerts with AI-summarized lead and deal signals · Pilot across several teams
+sequences-templates-and-playbooks,Sales Enablement,essential,6,10,8,Up to 5 sequences and 5 email templates · Snippet library · Up to 10 steps per sequence · Up to 10 snippets
+sequences-templates-and-playbooks,Sales Enablement,standard,10,20,15,Everything in Essential · Meeting links and document library · Sequence reporting · Sales playbook · 1 standard sequence report
+sequences-templates-and-playbooks,Sales Enablement,advanced,20,40,30,Everything in Standard · Sequences for several segments or motions · Sequences run in a connected tool such as Apollo
+sales-hub-setup-pipeline-and-activity,Sales Hub Setup,essential,4,8,6,Sales teams and sales-specific permissions · Activity logging standards
+sales-hub-setup-pipeline-and-activity,Sales Hub Setup,standard,8,18,13,Everything in Essential · Activity and prospecting views for reps and managers · Shared inbox
+sales-hub-setup-pipeline-and-activity,Sales Hub Setup,advanced,18,32,25,Everything in Standard · Several sales teams or regions with different processes
+sales-pipeline-design-and-build,Sales Pipeline Setup & Management,essential,6,12,9,"1 Deal pipeline, up to 7 stages · Required properties per stage · Deal record views"
+sales-pipeline-design-and-build,Sales Pipeline Setup & Management,standard,12,26,19,"Everything in Essential · 3 Deal pipeline, up to 7 stages · Pipeline task automations (up to 5) · Deal routing and owner assignment · Migrating existing deals into the new pipeline · Starter pipeline dashboard (up to 10 reports)"
+sales-pipeline-design-and-build,Sales Pipeline Setup & Management,advanced,26,36,31,Everything in Standard · 4+ Pipelines (for example new business and partner) · Stage gates with complex required data
+customer-agent-and-knowledge-base-setup,Service AI Agents,essential,8,12,10,Customer agent on one channel · Existing knowledge base articles
+customer-agent-and-knowledge-base-setup,Service AI Agents,standard,12,22,17,"Everything in Essential · Several channels · Additional training sources (website, documents)"
+customer-agent-and-knowledge-base-setup,Service AI Agents,advanced,22,35,29,Everything in Standard · Handoff rules across several support teams · Multiple languages
+help-desk-and-workspace-setup,Service Hub Setup,essential,4,8,6,Support teams and permissions · Up to 3 inboxes or channels · Business hours · Up to 3 support teams
+help-desk-and-workspace-setup,Service Hub Setup,standard,8,12,10,Everything in Essential · Chat and calling channels · After-hours handling
+help-desk-and-workspace-setup,Service Hub Setup,advanced,12,20,16,Everything in Standard · Several regions or brands with separate channels
+subscription-amendments,Subscription Amendments,essential,8,12,10,Upgrades and add-ons · Change quote template
+subscription-amendments,Subscription Amendments,standard,12,24,18,"Everything in Essential · Downgrades, quantity changes, and cancellations · Finance notifications"
+subscription-amendments,Subscription Amendments,advanced,24,40,32,Everything in Standard · Proration and co-terming · Billing system updates
+service-hub-setup-help-desk-tickets-routing-slas,Tickets & Help Desk,essential,12,20,16,1 ticket pipeline · Help desk workspace and agent views · Basic routing · 2 training sessions
+service-hub-setup-help-desk-tickets-routing-slas,Tickets & Help Desk,standard,20,40,30,Everything in Essential · Up to 2 ticket pipelines · SLAs by ticket type · Service reporting
+service-hub-setup-help-desk-tickets-routing-slas,Tickets & Help Desk,advanced,40,70,55,Everything in Standard · Several support tiers or regions · Sensitive data features
+custom-integration-api-workflow,Custom API Integration,essential,14,20,17,"One-way API or webhook integration, one object"
+custom-integration-api-workflow,Custom API Integration,standard,20,35,28,Everything in Essential · Two-way sync · Several objects
+custom-integration-api-workflow,Custom API Integration,advanced,35,60,48,Everything in Standard · Custom workflow actions or code · High volume or complex error handling · Partner-built integration coordination
+accounting-erp-integration,ERP & Accounting Integration,essential,14,22,18,One-way sync from HubSpot at Closed Won
+accounting-erp-integration,ERP & Accounting Integration,standard,22,50,36,Everything in Essential · Business process maps · Two-way updates such as invoice and payment status
+accounting-erp-integration,ERP & Accounting Integration,advanced,50,100,75,Everything in Standard · Several entities or currencies · Custom middleware or ERP customizations
+custom-integration-zapier-middleware,No-Code Integration,essential,8,15,12,"Up to 2 one-way flows, 5 to 10 properties each"
+custom-integration-zapier-middleware,No-Code Integration,standard,15,30,23,Everything in Essential · Two-way sync with conflict rules · Error alerts
+custom-integration-zapier-middleware,No-Code Integration,advanced,30,60,45,Everything in Standard · Multiple objects and associations · Transformations · Historical backfill
+product-usage-data,Product Usage Data,essential,10,16,13,Sign-up or trial event creates records in HubSpot · Up to 10 usage properties · Basic usage report
+product-usage-data,Product Usage Data,standard,16,30,23,"Everything in Essential · Product account or workspace object with associations · Custom events schema (up to about 10 events) · PQL criteria, usage-based lists, and alerts"
+product-usage-data,Product Usage Data,advanced,30,50,40,Everything in Standard · Warehouse or Data Hub sources (for example SQL or Snowflake) · Several products · Usage inputs to health scoring · Historical backfill
+salesforce-campaign-alignment,Salesforce Campaign Alignment,essential,8,12,10,"Governance only, with no sync configured: audit the Salesforce campaign hierarchy, set naming and required fields, and write a campaign creation checklist and operating procedure · Campaign member statuses"
+salesforce-campaign-alignment,Salesforce Campaign Alignment,standard,12,22,17,Everything in Essential · Campaign sync · Campaign influence on opportunities
+salesforce-campaign-alignment,Salesforce Campaign Alignment,advanced,22,36,29,Everything in Standard · Complex Salesforce parent campaign hierarchy
+salesforce-integration-setup,Salesforce Integration,essential,15,22,19,Standard objects syncing one way or selectively
+salesforce-integration-setup,Salesforce Integration,standard,22,40,31,"Everything in Essential · Two-way sync with field ownership rules · Duplicate and orphan cleanup · Stabilizing an existing connector: audit the current setup, diagnose duplicate and orphan records, validate account matching, and align lifecycle and status mapping"
+salesforce-integration-setup,Salesforce Integration,advanced,40,60,50,Everything in Standard · Custom objects · Complex Salesforce setup (several orgs or record types)
+third-party-native-integration-setup,Third-Party App Integrations,essential,6,9,8,Install and sync settings for one native app
+third-party-native-integration-setup,Third-Party App Integrations,standard,9,25,17,"Everything in Essential · Configured dialer, sales engagement, or messaging app (numbers, sequences, routing)"
+third-party-native-integration-setup,Third-Party App Integrations,advanced,25,45,35,Everything in Standard · Telephony across many countries · Several apps working together
+workflow-audit-and-cleanup,Automation Audit & Optimization,essential,8,12,10,Workflow inventory and prioritization
+workflow-audit-and-cleanup,Automation Audit & Optimization,standard,12,28,20,"Everything in Essential · Up to 3 routing, 5 task, and 3 data hygiene workflow improvements · Operating rules"
+workflow-audit-and-cleanup,Automation Audit & Optimization,advanced,28,48,38,"Everything in Standard · Large automation estates · Agent automation review: inventory, data access and guardrails, overlap with workflows, and retuning or retiring agents"
+data-cleanup-and-deduplication,Data Cleanup & Quality,essential,6,10,8,"Assessment only, with no execution: duplicate impact assessment, Data Hub or deduplication tool recommendation, and a remediation plan"
+data-cleanup-and-deduplication,Data Cleanup & Quality,standard,10,20,15,"Everything in Essential · Duplicate merge rules and deduplication of contacts and companies · Suppression and do-not-contact lists · A bad-data loop: reps flag bad records, which are suppressed or re-verified · Controls to stop bad data at the source · Exception reports and a monthly review"
+data-cleanup-and-deduplication,Data Cleanup & Quality,advanced,20,40,30,Everything in Standard · Third-party dedup tools or Data Hub · Cleaning source data before a migration
+data-enrichment,Data Enrichment,essential,8,12,10,One enrichment source · Priority fields
+data-enrichment,Data Enrichment,standard,12,24,18,Everything in Essential · Up to 3 sources · Job-change alerts
+data-enrichment,Data Enrichment,advanced,24,40,32,"Everything in Standard · Intent signals (up to 5) · Automated intent ingestion, replacing manual imports · Enrichment workflows built in the client's data provider (tables, waterfall lookups, verification, credit efficiency) · Coaching for the client's team on running the data provider workflows"
+property-audit-and-governance,Property Audit & Governance,essential,6,10,8,Property audit for one object
+property-audit-and-governance,Property Audit & Governance,standard,10,24,17,"Everything in Essential · All objects · Keep, consolidate, or delete decisions · Change request process"
+property-audit-and-governance,Property Audit & Governance,advanced,24,40,32,"Everything in Standard · Several hundred properties · Heavy downstream dependencies (reports, workflows, integrations)"
+teams-roles-and-permissions,"Roles, Teams & Permissions",essential,4,8,6,Permission review · Up to 3 teams
+teams-roles-and-permissions,"Roles, Teams & Permissions",standard,8,16,12,Everything in Essential · Target permission model · Up to 5 teams and 5 permission sets
+teams-roles-and-permissions,"Roles, Teams & Permissions",advanced,16,24,20,Everything in Standard · Team hierarchy for reporting · Multiple business units
+ongoing-support-fractional-revops,Ongoing RevOps Support,essential,20,30,25,"20, or 30 hours a month"
+ongoing-support-fractional-revops,Ongoing RevOps Support,standard,40,50,45,"Everything in Essential · 40, 50, or 60 hours a month · Small projects from the backlog"
+ongoing-support-fractional-revops,Ongoing RevOps Support,advanced,60,80,70,"Everything in Standard · 60, 70, 80, or more hours a month · Fractional RevOps leadership · Large Projects from the backlog"
