@@ -1,0 +1,176 @@
+<!--
+  templateType: quote
+  isAvailableForNewContent: true
+  label: PPC Quote
+-->
+{#
+  PPC Quote template. Rules come from docs/DECISIONS.md:
+  - Hours are line item quantity (rep seeds it from ppc_module_tiers.hours_default, the tier midpoint) and are editable.
+  - Rate comes from ppc_quote_settings.hourly_rate and the line item price.
+  - Project Management is its own line (ppc_module_role = PM) inside each workstream. It is not computed here.
+  - ppc_tier, ppc_module_role, ppc_module_family and ppc_5c_stage store the label as the value, so compare lowercased.
+  - Lines with a recurring billing frequency render in the Ongoing table, never in the one-time total.
+#}
+{% set quote = template_data.quote %}
+{% set lines = quote.associated_objects.line_items %}
+{% set deal = quote.associated_objects.deal %}
+{% set settings = hubdb_table_rows('ppc_quote_settings')|first %}
+{% set rate = settings.hourly_rate|default(225) %}
+{% set workstreams = hubdb_table_rows('ppc_workstreams', '&orderBy=ws_order') %}
+{% set outcomes = hubdb_table_rows('ppc_quote_outcomes') %}
+
+{# Totals #}
+{% set t = {'hours': 0, 'amount': 0, 'rec_hours': 0, 'rec_amount': 0} %}
+{% for li in lines %}
+  {% if li.recurringbillingfrequency %}
+    {% do t.update({'rec_hours': t.rec_hours + li.quantity|int, 'rec_amount': t.rec_amount + li.amount|float}) %}
+  {% else %}
+    {% do t.update({'hours': t.hours + li.quantity|int, 'amount': t.amount + li.amount|float}) %}
+  {% endif %}
+{% endfor %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ quote.title|default('Proposal') }}</title>
+  <link rel="stylesheet" href="{{ get_asset_url('../css/ppc-quote.css') }}">
+</head>
+<body class="ppc-quote" data-view="full">
+
+<header class="ppc-hero">
+  <div class="ppc-wrap">
+    <p class="ppc-label" style="color: var(--ppc-ice)">Process Pro Consulting</p>
+    <h1 class="ppc-h1">{{ quote.title|default('Your RevOps engagement') }}</h1>
+    <p>Prepared for {{ quote.associated_objects.company.name|default(deal.dealname) }}</p>
+    <div class="ppc-grid ppc-grid--kpi">
+      <div class="ppc-kpi"><div class="ppc-kpi__value">{{ t.hours }}</div><div class="ppc-kpi__label">One-time hours</div></div>
+      <div class="ppc-kpi"><div class="ppc-kpi__value">${{ t.amount|round|int|format_number }}</div><div class="ppc-kpi__label">One-time investment</div></div>
+      {% if t.rec_hours %}
+      <div class="ppc-kpi"><div class="ppc-kpi__value">${{ t.rec_amount|round|int|format_number }}/mo</div><div class="ppc-kpi__label">Ongoing support</div></div>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+<nav class="ppc-nav" aria-label="Proposal sections">
+  <div class="ppc-nav__inner">
+    <a href="#outcomes">Outcomes</a>
+    <a href="#investment">Investment</a>
+    <a href="#scope">Scope</a>
+    <button type="button" id="ppc-view-toggle" aria-pressed="false">Executive view</button>
+  </div>
+</nav>
+
+{% if deal.ppc_exec_situation %}
+<section class="ppc-section" id="situation">
+  <div class="ppc-wrap"><div class="ppc-card">
+    <p class="ppc-label">Where you are today</p>
+    <p>{{ deal.ppc_exec_situation }}</p>
+  </div></div>
+</section>
+{% endif %}
+
+<section class="ppc-section" id="outcomes">
+  <div class="ppc-wrap">
+    <h2 class="ppc-h2">What you get</h2>
+    <div class="ppc-grid ppc-grid--3">
+      {% for o in outcomes %}
+      <div class="ppc-card"><h3 class="ppc-h3">{{ o.headline }}</h3><p>{{ o.proof }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="ppc-section" id="investment">
+  <div class="ppc-wrap">
+    <h2 class="ppc-h2">Investment</h2>
+    <div class="ppc-card ppc-scroll">
+      <table class="ppc-table">
+        <thead><tr><th>Workstream</th><th class="num">Hours</th><th class="num">Rate</th><th class="num">Amount</th></tr></thead>
+        <tbody>
+        {% for ws in workstreams %}
+          {% set w = {'hours': 0, 'amount': 0} %}
+          {% for li in lines %}
+            {% if not li.recurringbillingfrequency and li.ppc_workstream|lower == ws.workstream_id|lower %}
+              {% do w.update({'hours': w.hours + li.quantity|int, 'amount': w.amount + li.amount|float}) %}
+            {% endif %}
+          {% endfor %}
+          {% if w.hours %}
+          <tr>
+            <td><span class="ppc-dot" style="background: {{ ws.color }}"></span>{{ ws.name }}</td>
+            <td class="num">{{ w.hours }}</td>
+            <td class="num">${{ rate }}</td>
+            <td class="num">${{ w.amount|round|int|format_number }}</td>
+          </tr>
+          {% endif %}
+        {% endfor %}
+        </tbody>
+        <tfoot><tr><td>One-time total</td><td class="num">{{ t.hours }}</td><td></td><td class="num">${{ t.amount|round|int|format_number }}</td></tr></tfoot>
+      </table>
+    </div>
+
+    {% if t.rec_hours %}
+    <div class="ppc-card ppc-scroll" style="margin-top:16px">
+      <p class="ppc-label">Ongoing, billed monthly</p>
+      <table class="ppc-table ppc-table--recurring">
+        <thead><tr><th>Service</th><th class="num">Hours / month</th><th class="num">Per month</th></tr></thead>
+        <tbody>
+        {% for li in lines %}{% if li.recurringbillingfrequency %}
+          <tr><td>{{ li.name }}{% if li.ppc_tier %} <span class="ppc-pill ppc-pill--phase">{{ li.ppc_tier }}</span>{% endif %}</td><td class="num">{{ li.quantity|int }}</td><td class="num">${{ li.amount|round|int|format_number }}</td></tr>
+        {% endif %}{% endfor %}
+        </tbody>
+      </table>
+      <p class="ppc-summary">Ongoing support is not part of the one-time total.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="ppc-section" id="scope">
+  <div class="ppc-wrap">
+    <h2 class="ppc-h2">Scope by workstream</h2>
+    <div class="ppc-grid ppc-grid--cards">
+    {% for ws in workstreams %}
+      {% set w = {'hours': 0, 'amount': 0, 'n': 0} %}
+      {% for li in lines %}
+        {% if not li.recurringbillingfrequency and li.ppc_workstream|lower == ws.workstream_id|lower %}
+          {% do w.update({'hours': w.hours + li.quantity|int, 'amount': w.amount + li.amount|float, 'n': w.n + 1}) %}
+        {% endif %}
+      {% endfor %}
+      {% if w.n %}
+      <article class="ppc-card ppc-ws-card">
+        <div class="ppc-ws-card__cap" style="background: {{ ws.color }}"></div>
+        <div class="ppc-ws-card__body">
+          <h3 class="ppc-h3">{{ ws.name }}</h3>
+          <p>{{ ws.description }}</p>
+          <ul data-ppc-detail>
+          {% for li in lines %}
+            {% if not li.recurringbillingfrequency and li.ppc_workstream|lower == ws.workstream_id|lower %}
+            <li><span>{{ li.name }}{% if li.ppc_tier %} <span class="ppc-pill ppc-pill--phase">{{ li.ppc_tier }}</span>{% endif %}</span><span>{{ li.quantity|int }} h</span></li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+          <div class="ppc-ws-card__foot"><span>{{ w.hours }} hours</span><span>${{ w.amount|round|int|format_number }}</span></div>
+        </div>
+      </article>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var body = document.body, btn = document.getElementById('ppc-view-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var exec = body.getAttribute('data-view') !== 'executive';
+      body.setAttribute('data-view', exec ? 'executive' : 'full');
+      btn.setAttribute('aria-pressed', exec ? 'true' : 'false');
+    });
+  })();
+</script>
+</body>
+</html>
